@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 
+.firstbracket {
+    background-color: black;
+    width: 10em;
+    height: 28em;
+} 
+
+.versus {
+    background-color:black;
+    width: 9em;
+    height: 5em;
+}
+
+.team {
+    background-color:grey;
+    width: 8em;
+    height: 2em;
+}
+
+p {
+    margin: 0.2em;
+}
+
 @media only screen and (max-width: 600px) {
   
 }
