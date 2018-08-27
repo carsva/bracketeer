@@ -191,113 +191,79 @@ export class AppProvider extends React.Component {
   };
 
   quarterFinal = () => {
-    var obj1 = [
-      {
-        name: this.state.teams[0].name
-      },
-      {
-        name: this.state.teams[1].name
-      }
-    ];
 
-    var obj2 = [
-      {
-        name: this.state.teams[2].name
-      },
-      {
-        name: this.state.teams[3].name
-      }
-    ];
+  //   var teams = [
+  //     {name: this.state.teams[0].name},
+  //     {name: this.state.teams[1].name},
+  //     {name: this.state.teams[3].name},
+  //     {name: this.state.teams[4].name},
+  //     {name: this.state.teams[5].name},
+  //     {name: this.state.teams[6].name},
+  //     {name: this.state.teams[7].name},
+  //     {name: this.state.teams[8].name},
+  //     {name: this.state.teams[9].name},
+  //     {name: this.state.teams[10].name},
+  //     {name: this.state.teams[11].name},
+  //     {name: this.state.teams[12].name},
+  //     {name: this.state.teams[13].name},
+  //     {name: this.state.teams[14].name},
+  //     {name: this.state.teams[15].name},
+  // ]
 
-    var obj3 = [
-      {
-        name: this.state.teams[4].name
-      },
-      {
-        name: this.state.teams[5].name
-      }
-    ];
-
-    var obj4 = [
-      {
-        name: this.state.teams[6].name
-      },
-      {
-        name: this.state.teams[7].name
-      }
-    ];
-    var obj5 = [
-      {
-        name: this.state.teams[8].name
-      },
-      {
-        name: this.state.teams[9].name
-      }
-    ];
-
-    var obj6 = [
-      {
-        name: this.state.teams[10].name
-      },
-      {
-        name: this.state.teams[11].name
-      }
-    ];
-
-    var obj7 = [
-      {
-        name: this.state.teams[12].name
-      },
-      {
-        name: this.state.teams[13].name
-      }
-    ];
-
-    var obj8 = [
-      {
-        name: this.state.teams[14].name
-      },
-      {
-        name: this.state.teams[15].name
-      }
-    ];
-   
-    var randomNumber = Math.floor(Math.random() * 2) 
+  var pickedName0 = this.state.teams[Math.floor(Math.random()*(1-0+1)+0)].name;
+  var pickedName1 = this.state.teams[Math.floor(Math.random()*(3-2+1)+2)].name;
+  var pickedName2 = this.state.teams[Math.floor(Math.random()*(5-4+1)+4)].name;
+  var pickedName3 = this.state.teams[Math.floor(Math.random()*(7-6+1)+6)].name;
+  var pickedName4 = this.state.teams[Math.floor(Math.random()*(9-8+1)+8)].name;
+  var pickedName5 = this.state.teams[Math.floor(Math.random()*(11-10+1)+10)].name;
+  var pickedName6 = this.state.teams[Math.floor(Math.random()*(13-12+1)+12)].name;
+  var pickedName7 = this.state.teams[Math.floor(Math.random()*(15-14+1)+14)].name;
     
-    this.setState({
-      quarter: [...this.state.quarter, 
-        { 
-          name: obj1[randomNumber].name 
-        },
-        { 
-          name: obj2[randomNumber].name 
-        },
-        { 
-          name: obj3[randomNumber].name 
-        },
-        { 
-          name: obj4[randomNumber].name 
-        },
-        { 
-          name: obj5[randomNumber].name 
-        },
-        { 
-          name: obj6[randomNumber].name 
-        },
-        { 
-          name: obj7[randomNumber].name 
-        },
-        { 
-          name: obj8[randomNumber].name 
-        },
+  let quarterTeams = [
+      {name: pickedName0},
+      {name: pickedName1},
+      {name: pickedName2},
+      {name: pickedName3},
+      {name: pickedName4},
+      {name: pickedName5},
+      {name: pickedName6},
+      {name: pickedName7},
+    ]
+    console.log(quarterTeams)
+
+    console.log(!this.state.quarter[0])
+    
+    if (!this.state.quarter[0]) {
+      console.log(quarterTeams[0].name)
+      this.setState({
+        quarter: [
+          ...this.state.quarter,
+          { 
+            name: quarterTeams[0].name
+          }
         ],
+      });
+      console.log(this.state.quarter.length)
+    } else {
+      console.log(this.state.quarter.length)
+    var rightNum = this.state.quarter.length + 0;
+    console.log(quarterTeams[rightNum].name)
+
+    this.setState({
+      quarter: [
+        ...this.state.quarter,
+        { 
+          name: quarterTeams[rightNum].name
+        }
+      ],
     });
-    console.log(obj1[randomNumber])
-    // var team1 = this.state.teams[0].name;
-    // var team2 = this.state.teams[1].name;
+    }
 
     
-  };
+
+    
+
+  }
 
   teamPlacer = () => {
     let teams = this.state.teamsLeft;
@@ -327,7 +293,7 @@ export class AppProvider extends React.Component {
 
   componentWillMount() {
     let teams = TeamsApi.Teams;
-    this.setState({ teamsLeft: teams });
+    this.setState({ teams: teams });
   }
 
   render() {
