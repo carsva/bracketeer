@@ -4,6 +4,7 @@ import Team from './../components/Team';
 
 class Home extends Component {
   render() {
+    
     return (
       <AppConsumer>
         {context => (
@@ -26,6 +27,7 @@ class Home extends Component {
                 <Team />
               </div>
             </div>
+            <button onClick={context.state.teamPlacer}>Place</button>
           </div>
         )}
       </AppConsumer>
