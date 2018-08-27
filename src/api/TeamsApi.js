@@ -1,6 +1,6 @@
 export default {
   Teams: [
-    {name: "Secret"},
+    {name: "Secret",},
     {name: "OpTic"},
     {name: "Virtous Pro"},
     {name: "PSG.LGD"},
