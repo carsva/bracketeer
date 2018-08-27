@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 
-.firstbracket {
+.bracket {
     background-color: black;
     width: 10em;
     height: 44em;
+    float: left;
 } 
 
 .versus {
@@ -20,6 +21,10 @@
 
 p {
     margin: 0.2em;
+}
+
+.bracketContainer {
+    height: 48em;
 }
 
 @media only screen and (max-width: 600px) {

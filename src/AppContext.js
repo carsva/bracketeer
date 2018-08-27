@@ -129,6 +129,11 @@ export class AppProvider extends React.Component {
     }
   };
 
+  quarterFinal = () => {
+    
+
+  }
+
   teamPlacer = () => {
     let teams = this.state.teamsLeft;
 
@@ -141,9 +146,6 @@ export class AppProvider extends React.Component {
       console.log(pickedName);
       console.log(filteredTeams);
 
-      // this.setState({
-      //   teamsLeft: filteredTeams,
-      // });
       if (filteredTeams.length >= 0) {
         this.setState({
           teams: [...this.state.teams, { name: pickedName }],
