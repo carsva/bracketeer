@@ -293,7 +293,7 @@ export class AppProvider extends React.Component {
 
   componentWillMount() {
     let teams = TeamsApi.Teams;
-    this.setState({ teams: teams });
+    this.setState({ teamsLeft: teams });
   }
 
   render() {
