@@ -7,7 +7,11 @@ export class AppProvider extends React.Component {
   state = {
     teams: [],
     teamsLeft: [],
-    test: 'testnamn',
+    quarterFinal: [],
+    quarter: [],
+    semiFinal: [],
+    final: [],
+    winner: '',
   };
 
   firstPlace = expression => {
@@ -26,7 +30,7 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
-        case 2:
+      case 2:
         if (this.state.teams[2]) {
           return this.state.teams[2].name;
         } else {
@@ -40,7 +44,7 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
-        case 4:
+      case 4:
         if (this.state.teams[4]) {
           return this.state.teams[4].name;
         } else {
@@ -54,7 +58,7 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
-        case 6:
+      case 6:
         if (this.state.teams[6]) {
           return this.state.teams[6].name;
         } else {
@@ -68,7 +72,7 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
-        case 8:
+      case 8:
         if (this.state.teams[8]) {
           return this.state.teams[8].name;
         } else {
@@ -82,7 +86,7 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
-        case 10:
+      case 10:
         if (this.state.teams[10]) {
           return this.state.teams[10].name;
         } else {
@@ -96,7 +100,7 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
-        case 12:
+      case 12:
         if (this.state.teams[12]) {
           return this.state.teams[12].name;
         } else {
@@ -110,7 +114,7 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
-        case 14:
+      case 14:
         if (this.state.teams[14]) {
           return this.state.teams[14].name;
         } else {
@@ -125,14 +129,175 @@ export class AppProvider extends React.Component {
         }
         break;
 
+      //next bracket
 
+      case 16:
+      if (this.state.quarter[0]) {
+        return this.state.quarter[0].name;
+      } else {
+        return '';
+      }
+        break;
+      case 17:
+      if (this.state.quarter[1]) {
+        return this.state.quarter[1].name;
+      } else {
+        return '';
+      }
+        break;
+      case 18:
+        if (this.state.quarter[2]) {
+        return this.state.quarter[2].name;
+      } else {
+        return '';
+      }
+        break;
+      case 19:
+      if (this.state.quarter[3]) {
+        return this.state.quarter[3].name;
+      } else {
+        return '';
+      }
+        break;
+      case 20:
+      if (this.state.quarter[4]) {
+        return this.state.quarter[4].name;
+      } else {
+        return '';
+      }
+        break;
+      case 21:
+      if (this.state.quarter[5]) {
+        return this.state.quarter[5].name;
+      } else {
+        return '';
+      }
+        break;
+      case 22:
+      if (this.state.quarter[6]) {
+        return this.state.quarter[6].name;
+      } else {
+        return '';
+      }
+        break;
+      case 23:
+      if (this.state.quarter[7]) {
+        return this.state.quarter[7].name;
+      } else {
+        return '';
+      }
+        break;
     }
   };
 
   quarterFinal = () => {
-    
+    var obj1 = [
+      {
+        name: this.state.teams[0].name
+      },
+      {
+        name: this.state.teams[1].name
+      }
+    ];
 
-  }
+    var obj2 = [
+      {
+        name: this.state.teams[2].name
+      },
+      {
+        name: this.state.teams[3].name
+      }
+    ];
+
+    var obj3 = [
+      {
+        name: this.state.teams[4].name
+      },
+      {
+        name: this.state.teams[5].name
+      }
+    ];
+
+    var obj4 = [
+      {
+        name: this.state.teams[6].name
+      },
+      {
+        name: this.state.teams[7].name
+      }
+    ];
+    var obj5 = [
+      {
+        name: this.state.teams[8].name
+      },
+      {
+        name: this.state.teams[9].name
+      }
+    ];
+
+    var obj6 = [
+      {
+        name: this.state.teams[10].name
+      },
+      {
+        name: this.state.teams[11].name
+      }
+    ];
+
+    var obj7 = [
+      {
+        name: this.state.teams[12].name
+      },
+      {
+        name: this.state.teams[13].name
+      }
+    ];
+
+    var obj8 = [
+      {
+        name: this.state.teams[14].name
+      },
+      {
+        name: this.state.teams[15].name
+      }
+    ];
+   
+    var randomNumber = Math.floor(Math.random() * 2) 
+    
+    this.setState({
+      quarter: [...this.state.quarter, 
+        { 
+          name: obj1[randomNumber].name 
+        },
+        { 
+          name: obj2[randomNumber].name 
+        },
+        { 
+          name: obj3[randomNumber].name 
+        },
+        { 
+          name: obj4[randomNumber].name 
+        },
+        { 
+          name: obj5[randomNumber].name 
+        },
+        { 
+          name: obj6[randomNumber].name 
+        },
+        { 
+          name: obj7[randomNumber].name 
+        },
+        { 
+          name: obj8[randomNumber].name 
+        },
+        ],
+    });
+    console.log(obj1[randomNumber])
+    // var team1 = this.state.teams[0].name;
+    // var team2 = this.state.teams[1].name;
+
+    
+  };
 
   teamPlacer = () => {
     let teams = this.state.teamsLeft;
@@ -155,6 +320,8 @@ export class AppProvider extends React.Component {
           teamsLeft: filteredTeams,
         });
       }
+    } else {
+      this.quarterFinal();
     }
   };
 
@@ -170,6 +337,7 @@ export class AppProvider extends React.Component {
         test: this.test,
         teamPlacer: this.teamPlacer,
         firstPlace: this.firstPlace,
+        quarterFinal: this.quarterFinal,
       },
     };
 

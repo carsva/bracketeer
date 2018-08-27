@@ -45,24 +45,25 @@ class Home extends Component {
               </div>
               <div className="bracket">
                 <div className="versus">
-                  <Team name={context.state.firstPlace(0)} />
-                  <Team name={context.state.firstPlace(1)} />
+                  <Team name={context.state.firstPlace(16)} />
+                  <Team name={context.state.firstPlace(17)} />
                 </div>
                 <div className="versus">
-                  <Team name={context.state.firstPlace(2)} />
-                  <Team name={context.state.firstPlace(3)} />
+                  <Team name={context.state.firstPlace(18)} />
+                  <Team name={context.state.firstPlace(19)} />
                 </div>
                 <div className="versus">
-                  <Team name={context.state.firstPlace(4)} />
-                  <Team name={context.state.firstPlace(5)} />
+                  <Team name={context.state.firstPlace(20)} />
+                  <Team name={context.state.firstPlace(21)} />
                 </div>
                 <div className="versus">
-                  <Team name={context.state.firstPlace(6)} />
-                  <Team name={context.state.firstPlace(7)} />
+                  <Team name={context.state.firstPlace(22)} />
+                  <Team name={context.state.firstPlace(23)} />
                 </div>
               </div>
 
               <button onClick={context.state.teamPlacer}>Place</button>
+              <button onClick={context.state.quarterFinal}>quarterFinal</button>
               <div className="state space">
                 <h3>Data that lives in the context</h3>
                 <pre>{JSON.stringify(context, null, 4)}</pre>
