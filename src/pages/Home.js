@@ -85,10 +85,10 @@ class Home extends Component {
 
               <button onClick={context.state.teamPlacer}>Place</button>
               {/* <button onClick={context.state.quarterFinal}>quarterFinal</button> */}
-              {/* <div className="state space">
+              <div className="state space">
                 <h3>Data that lives in the context</h3>
                 <pre>{JSON.stringify(context, null, 4)}</pre>
-              </div> */}
+              </div>
             </div>
           </div>
         )}
