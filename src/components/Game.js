@@ -9,8 +9,10 @@ class Game extends Component {
       <AppConsumer>
         {context => (
           <div>
-            <div>
-              <p>Im the games component</p>
+              <div className="game">
+              <div className="game_header"></div>
+            
+              <Team/>
               <Team/>
             </div>
 
