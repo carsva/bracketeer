@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
+import Game from './../components/Game';
 
-class Team extends Component {
+class LB1 extends Component {
  
   render() {
     return (
       <AppConsumer>
         {context => (
-          <div>
-            <div>
-              <p>Im the team component</p>
-            </div>
-
-
+          <div className="LB1">
+            im the lower bracket round 1
+            <Game/>
           </div>
         )}
       </AppConsumer>
@@ -20,4 +18,4 @@ class Team extends Component {
   }
 }
 
-export default Team;
+export default LB1;

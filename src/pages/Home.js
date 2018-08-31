@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
 import Team from './../components/Team';
+import LB1 from './../components/LB1';
+import Game from './../components/Game';
 
 class Home extends Component {
   render() {
@@ -8,7 +10,9 @@ class Home extends Component {
       <AppConsumer>
         {context => (
           <div>
-            <div className="bracketContainer">
+            <LB1/>
+            {console.log(context.state)}
+            {/* <div className="bracketContainer">
               <div className="bracket">
                 <div className="versus">
                   <Team name={context.state.firstPlace(0)} />
@@ -81,7 +85,7 @@ class Home extends Component {
                 <div className="versus">
                   <Team name={context.state.firstPlace(30)} />
                 </div>
-              </div>
+              </div> */}
 
               
               {/* <button onClick={context.state.quarterFinal}>quarterFinal</button> */}
@@ -89,8 +93,8 @@ class Home extends Component {
                 <h3>Data that lives in the context</h3>
                 <pre>{JSON.stringify(context, null, 4)}</pre>
               </div> */}
-            </div>
-            <button onClick={context.state.teamPlacer}>Place</button>
+            {/* </div> */}
+            {/* <button onClick={context.state.teamPlacer}>Place</button> */}
           </div>
         )}
       </AppConsumer>

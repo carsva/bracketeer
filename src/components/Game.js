@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
+import Team from './../components/Team';
 
-class Team extends Component {
+class Game extends Component {
  
   render() {
     return (
@@ -9,7 +10,8 @@ class Team extends Component {
         {context => (
           <div>
             <div>
-              <p>Im the team component</p>
+              <p>Im the games component</p>
+              <Team/>
             </div>
 
 
@@ -20,4 +22,4 @@ class Team extends Component {
   }
 }
 
-export default Team;
+export default Game;
