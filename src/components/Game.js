@@ -11,11 +11,11 @@ class Game extends Component {
           <div>
               <div className="game">
               <div className="game_header">
-              <p>Lower bracket round 1</p>
+              <p>LB round 1</p>
               </div>
 
-              <Team/>
-              <Team/>
+              <Team name="Liquid"/>
+              <Team name="Alliance"/>
             </div>
 
 

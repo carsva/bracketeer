@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
-import Team from './../components/Team';
-import LB1 from './../components/LB1';
-import Game from './../components/Game';
+import LowerBracket from './../components/LowerBracket';
+import UpperBracket from './../components/UpperBracket';
 
 class Home extends Component {
   render() {
@@ -10,7 +9,8 @@ class Home extends Component {
       <AppConsumer>
         {context => (
           <div>
-            <LB1/>
+            <UpperBracket/>
+            <LowerBracket/>
             {console.log(context.state)}
             {/* <div className="bracketContainer">
               <div className="bracket">

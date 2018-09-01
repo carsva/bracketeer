@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
 import Game from './../components/Game';
+import LB1 from './../components/LB1';
 
-class LB1 extends Component {
+class LowerBracket extends Component {
  
   render() {
     return (
       <AppConsumer>
         {context => (
-          <div className="LB1">
-            <Game/>
-            <Game/>
-            <Game/>
-            <Game/>
+          <div className="LowerBracket">
+            <LB1/>
           </div>
         )}
       </AppConsumer>
@@ -20,4 +18,4 @@ class LB1 extends Component {
   }
 }
 
-export default LB1;
+export default LowerBracket;
