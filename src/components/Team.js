@@ -9,7 +9,7 @@ class Team extends Component {
         {context => (
           <div className="team">
             <div><img className="logo" src="logo.png"></img></div>
-            <div>Alliance</div>
+            <div>Team Liquid</div>
           </div>
         )}
       </AppConsumer>

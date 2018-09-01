@@ -10,8 +10,10 @@ class Game extends Component {
         {context => (
           <div>
               <div className="game">
-              <div className="game_header"></div>
-            
+              <div className="game_header">
+              <p>Lower bracket round 1</p>
+              </div>
+
               <Team/>
               <Team/>
             </div>
