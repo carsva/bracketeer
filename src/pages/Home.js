@@ -2,15 +2,21 @@ import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
 import LowerBracket from './../components/LowerBracket';
 import UpperBracket from './../components/UpperBracket';
+import GrandFinal from './../components/GrandFinal';
 
 class Home extends Component {
   render() {
     return (
       <AppConsumer>
         {context => (
-          <div>
+          <div className="MasterContainer">
+            <div className="FirstContainer">
             <UpperBracket/>
             <LowerBracket/>
+            </div>
+            <div className="SecondContainer">
+            <GrandFinal/>
+            </div>
             {console.log(context.state)}
             {/* <div className="bracketContainer">
               <div className="bracket">
