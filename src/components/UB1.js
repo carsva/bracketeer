@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
-import UB1 from './../components/UB1';
+import Game from './../components/Game';
 
-class UpperBracket extends Component {
+class UB1 extends Component {
  
   render() {
     return (
       <AppConsumer>
         {context => (
-          <div className="UpperBracket">
-            <UB1/>
+          <div className="UB1">
           </div>
         )}
       </AppConsumer>
@@ -17,4 +16,4 @@ class UpperBracket extends Component {
   }
 }
 
-export default UpperBracket;
+export default UB1
