@@ -3,6 +3,7 @@ import { AppConsumer } from '../AppContext';
 import LowerBracket from './../components/LowerBracket';
 import UpperBracket from './../components/UpperBracket';
 import GrandFinal from './../components/GrandFinal';
+import Team from './../components/Team';
 
 class Home extends Component {
   render() {
@@ -20,6 +21,9 @@ class Home extends Component {
             <GrandFinal/>
             <button onClick={context.state.test}>Action</button>
             </div>
+              </div>
+              <div>
+                <Team/>
               </div>
               <div>
                 {console.log(context.state)}           

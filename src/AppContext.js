@@ -298,7 +298,34 @@ export class AppProvider extends React.Component {
     };
   };
 
+  test10 = () => {
+    console.log(this.state.winner[0].name)
+  }
+
+  test9 = () => {
+    if(this.state.winner < 1) {
+    var results = this.randomTeam(
+      this.state.grandFinal[0],
+      this.state.grandFinal[1],
+    );
+  
+    var { winner } = results;
+
+    this.setState({
+      winner: [
+        {
+          name: winner.name,
+          logo: winner.logo,
+        },
+      ]
+    });
+  } else {
+    this.test10();
+  }
+}
+
   test8 = () => {
+    if(this.state.grandFinal.length < 2) {
     console.log('sista nu calle')
     var results = this.randomTeam(
       this.state.lb6[0],
@@ -317,6 +344,9 @@ export class AppProvider extends React.Component {
         },
       ],
     });
+  } else {
+    this.test9();
+  }
   }
 
   test7 = () => {
