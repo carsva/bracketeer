@@ -5,7 +5,8 @@ export const AppContext = React.createContext('plant');
 
 export class AppProvider extends React.Component {
   state = {
-    teamsLeft: [],
+    startingTeams: [],
+    teams: [],
     ub2: [],
     ub4: [], 
     ub6: [],

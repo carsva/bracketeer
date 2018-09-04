@@ -10,10 +10,8 @@ class LB2 extends Component {
         {context => (
           <div className="LB2">
              <Game 
-            team0={context.state.placing(0).name1} 
-            logo0={context.state.placing(0).logo1} 
-            // team1={context.state.teamsLeft[1].name} 
-            // logo1={context.state.teamsLeft[1].logo} 
+            team0={context.state.placing(0).name1 ? context.state.placing(0).name1 : ""} 
+            logo0={context.state.placing(0).logo1 ? context.state.placing(0).logo1 : ""} 
             round="Round 2"/>
 
             <Game/>

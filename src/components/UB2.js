@@ -10,11 +10,13 @@ class UB2 extends Component {
         {context => (
           <div className="UB2">
             <Game 
-            team0={context.state.teamsLeft[0].name} 
+            team0={context.state.teamsLeft[0].name}
             logo0={context.state.teamsLeft[0].logo} 
             team1={context.state.teamsLeft[1].name} 
             logo1={context.state.teamsLeft[1].logo} 
             round="Round 2"/>
+
+            {/* team0={context.state.teamsLeft[0].name ? context.state.teamsLeft[0].name: ""} */}
 
             <Game 
             team0={context.state.teamsLeft[2].name} 
