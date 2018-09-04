@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
-import Game from './../components/Game';
 
 class UB1 extends Component {
  

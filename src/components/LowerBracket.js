@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../AppContext';
-import Game from './../components/Game';
 import LB1 from './../components/LB1';
 import LB2 from './../components/LB2';
 import LB3 from './../components/LB3';

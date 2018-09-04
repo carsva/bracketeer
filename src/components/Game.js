@@ -17,8 +17,6 @@ class Game extends Component {
               <Team name={team0} logo={logo0}/>
               <Team name={team1} logo={logo1}/>
             </div>
-
-
           </div>
         )}
       </AppConsumer>
