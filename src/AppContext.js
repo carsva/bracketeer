@@ -6,6 +6,7 @@ export const AppContext = React.createContext('plant');
 export class AppProvider extends React.Component {
   state = {
     game: 0,
+    game2: 0,
     ub2: [],
     ub4: [],
     ub6: [],
@@ -20,8 +21,6 @@ export class AppProvider extends React.Component {
     startingTeams: [],
     teamsLeft: [],
   };
-
- 
 
   placing = expression => {
     switch (expression) {
@@ -121,6 +120,46 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
+      case 8:
+        if (this.state.lb3[0]) {
+          return {
+            name0: this.state.lb3[0].name,
+            logo0: this.state.lb3[0].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+      case 9:
+        if (this.state.lb3[1]) {
+          return {
+            name0: this.state.lb3[1].name,
+            logo0: this.state.lb3[1].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+        case 10:
+        if (this.state.lb3[2]) {
+          return {
+            name0: this.state.lb3[2].name,
+            logo0: this.state.lb3[2].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+        case 11:
+        if (this.state.lb3[3]) {
+          return {
+            name0: this.state.lb3[3].name,
+            logo0: this.state.lb3[3].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
     }
   };
 
@@ -145,8 +184,66 @@ export class AppProvider extends React.Component {
   };
 
   test2 = () => {
-    console.log('aight')
-  }
+    var reOrder = [
+      {
+        name: this.state.lb2[0].name,
+        logo: this.state.lb2[0].logo,
+      },
+      {
+        name: this.state.lb2[4].name,
+        logo: this.state.lb2[4].logo,
+      },
+      {
+        name: this.state.lb2[1].name,
+        logo: this.state.lb2[1].logo,
+      },
+      {
+        name: this.state.lb2[5].name,
+        logo: this.state.lb2[5].logo,
+      },
+      {
+        name: this.state.lb2[2].name,
+        logo: this.state.lb2[2].logo,
+      },
+      {
+        name: this.state.lb2[6].name,
+        logo: this.state.lb2[6].logo,
+      },
+      {
+        name: this.state.lb2[3].name,
+        logo: this.state.lb2[3].logo,
+      },
+      {
+        name: this.state.lb2[7].name,
+        logo: this.state.lb2[7].logo,
+      },
+    ];
+
+    console.log(reOrder);
+    var gameOrder = this.state.game2;
+    var results = this.randomTeam(
+      reOrder[gameOrder],
+      reOrder[gameOrder + 1],
+    );
+    console.log(gameOrder);
+    console.log(gameOrder + 1);
+
+    var { winner } = results;
+
+    this.setState({
+      lb3: [
+        ...this.state.lb3,
+        {
+          name: winner.name,
+          logo: winner.logo,
+        },
+      ],
+    });
+
+    this.setState({
+      game2: this.state.game2 + 2,
+    });
+  };
 
   test = () => {
     if (this.state.game < 8) {
