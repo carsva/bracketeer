@@ -35,13 +35,37 @@ export class AppProvider extends React.Component {
         return '';
       }
       break;
-      case 2:
+      case 1:
       if (this.state.ub4[1]) {
         return {
           name0: this.state.ub4[1].name,
           logo0: this.state.ub4[1].logo,
           name1: this.state.lb2[1].name,
           logo1: this.state.lb2[1].logo,
+        }
+      } else {
+        return '';
+      }
+      break;
+      case 2:
+      if (this.state.ub4[2]) {
+        return {
+          name0: this.state.ub4[2].name,
+          logo0: this.state.ub4[2].logo,
+          name1: this.state.lb2[2].name,
+          logo1: this.state.lb2[2].logo,
+        }
+      } else {
+        return '';
+      }
+      break;
+      case 3:
+      if (this.state.ub4[3]) {
+        return {
+          name0: this.state.ub4[3].name,
+          logo0: this.state.ub4[3].logo,
+          name1: this.state.lb2[3].name,
+          logo1: this.state.lb2[3].logo,
         }
       } else {
         return '';
@@ -101,7 +125,7 @@ export class AppProvider extends React.Component {
     
 
     this.setState({
-      game: this.state.game + 2,
+      game: this.state.game + 1,
     });
     
 

@@ -12,15 +12,15 @@ class UB4 extends Component {
             <Game 
             team0={context.state.placing(0).name0 ? context.state.placing(0).name0 : ""} 
             logo0={context.state.placing(0).logo0 ? context.state.placing(0).logo0 : ""} 
-            // team1={context.state.placing(0).name0} 
-            // logo1={context.state.placing(0).logo0} 
+            team1={context.state.placing(1).name0 ? context.state.placing(1).name0 : ""} 
+            logo1={context.state.placing(1).logo0 ? context.state.placing(1).logo0 : ""}
             round="Round 4"/>
 
             <Game 
-            // team0={context.state.placing(2).name0 ? context.state.placing(2).name0 : ""} 
-            // logo0={context.state.placing(2).logo0 ? context.state.placing(2).logo0 : ""} 
-            // team1={context.state.teamsLeft[1].name} 
-            // logo1={context.state.teamsLeft[1].logo} 
+            team0={context.state.placing(2).name0 ? context.state.placing(2).name0 : ""} 
+            logo0={context.state.placing(2).logo0 ? context.state.placing(2).logo0 : ""} 
+            team1={context.state.placing(3).name0 ? context.state.placing(3).name0 : ""} 
+            logo1={context.state.placing(3).logo0 ? context.state.placing(3).logo0 : ""} 
             round="Round 4"/>
           </div>
         )}
