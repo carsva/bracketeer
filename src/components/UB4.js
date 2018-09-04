@@ -9,8 +9,19 @@ class UB4 extends Component {
       <AppConsumer>
         {context => (
           <div className="UB4">
-            <Game/>
-            <Game/>
+            <Game 
+            team0={context.state.placing(0).name} 
+            logo0={context.state.placing(0).logo} 
+            // team1={context.state.teamsLeft[1].name} 
+            // logo1={context.state.teamsLeft[1].logo} 
+            round="Round 2"/>
+
+            <Game 
+            // team0={context.state.teamsLeft[0].name} 
+            // logo0={context.state.teamsLeft[0].logo} 
+            // team1={context.state.teamsLeft[1].name} 
+            // logo1={context.state.teamsLeft[1].logo} 
+            round="Round 2"/>
           </div>
         )}
       </AppConsumer>

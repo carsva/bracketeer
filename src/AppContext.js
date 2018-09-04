@@ -5,6 +5,7 @@ export const AppContext = React.createContext('plant');
 
 export class AppProvider extends React.Component {
   state = {
+    game: 0,
     ub2: [],
     ub4: [], 
     ub6: [],
@@ -18,6 +19,17 @@ export class AppProvider extends React.Component {
     winner: [],
     teamsLeft: [],
   };
+
+  placing = expression => {
+    
+    switch (expression) {
+      case 0:
+      return {
+        name: this.state.ub4.name,
+        logo: this.state.ub4.logo
+        }
+      }
+    }
 
   randomNumber = () => {
     var number = Math.floor(Math.random() * (1 - 0 + 1) + 0);
@@ -36,21 +48,28 @@ export class AppProvider extends React.Component {
       return team !== winner;
     });
 
-    return console.log({
+    return {
       winner: winner,
       looser: looser[0]
-    })
+    }
 
     }
 
   test = () => {
-    this.randomTeam(this.state.teamsLeft[0], this.state.teamsLeft[1] )
+    var results = this.randomTeam(this.state.teamsLeft[0], this.state.teamsLeft[1])
+    var {winner, looser} = results;
+    
+    this.setState({
+      ub4: winner,
+      lb2: looser
+    })
 
-    // var randomTeam = this.state.teamsLeft[this.randomNumber()];
-    // this.setState({
-    //   ub2: randomTeam
-    // })
-    // console.log(randomTeam)
+    this.setState({
+      game: this.state.game + 1,
+    })
+
+    this.placing(0);
+
     }
 
   componentWillMount() {
@@ -65,6 +84,7 @@ export class AppProvider extends React.Component {
       state: {
         ...this.state,
         test: this.test,
+        placing: this.placing,
       },
     };
 
