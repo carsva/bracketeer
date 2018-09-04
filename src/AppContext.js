@@ -133,14 +133,11 @@ export class AppProvider extends React.Component {
     var filtered = teams.filter(team => {
       return team !== winner;
     });
-
-    
+ 
 
     this.setState({
       startingTeams: filtered,
     });
-    this.placing(0);
-    
 
   };
 
