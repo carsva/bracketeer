@@ -5,7 +5,6 @@ export const AppContext = React.createContext('plant');
 
 export class AppProvider extends React.Component {
   state = {
-    teamsLeft: [],
     ub2: [],
     ub4: [], 
     ub6: [],
@@ -17,12 +16,42 @@ export class AppProvider extends React.Component {
     lb6: [],
     grandFinal: [],
     winner: [],
+    teamsLeft: [],
   };
 
-  test = () => {
-    console.log('test');
-    
+  randomNumber = () => {
+    var number = Math.floor(Math.random() * (1 - 0 + 1) + 0);
+    return number
   }
+
+  randomTeam = (obj0, obj1) => {
+    var teams = [
+      obj0,
+      obj1
+    ];
+      
+    var winner = teams[this.randomNumber()];
+
+    var looser = teams.filter(team => {
+      return team !== winner;
+    });
+
+    return console.log({
+      winner: winner,
+      looser: looser[0]
+    })
+
+    }
+
+  test = () => {
+    this.randomTeam(this.state.teamsLeft[0], this.state.teamsLeft[1] )
+
+    // var randomTeam = this.state.teamsLeft[this.randomNumber()];
+    // this.setState({
+    //   ub2: randomTeam
+    // })
+    // console.log(randomTeam)
+    }
 
   componentWillMount() {
     let teams = TeamsApi.Teams;
