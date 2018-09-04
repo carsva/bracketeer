@@ -7,6 +7,8 @@ export class AppProvider extends React.Component {
   state = {
     game: 0,
     game2: 0,
+    game3: 0,
+    game4: 0,
     ub2: [],
     ub4: [],
     ub6: [],
@@ -160,6 +162,66 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
+        case 12:
+        if (this.state.ub6[0]) {
+          return {
+            name0: this.state.ub6[0].name,
+            logo0: this.state.ub6[0].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+        case 13:
+        if (this.state.lb4[0]) {
+          return {
+            name0: this.state.lb4[0].name,
+            logo0: this.state.lb4[0].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+        case 14:
+        if (this.state.ub6[1]) {
+          return {
+            name0: this.state.ub6[1].name,
+            logo0: this.state.ub6[1].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+        case 15:
+        if (this.state.lb4[1]) {
+          return {
+            name0: this.state.lb4[1].name,
+            logo0: this.state.lb4[1].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+        case 16:
+        if (this.state.lb4[2]) {
+          return {
+            name0: this.state.lb4[2].name,
+            logo0: this.state.lb4[2].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
+        case 17:
+        if (this.state.lb4[3]) {
+          return {
+            name0: this.state.lb4[3].name,
+            logo0: this.state.lb4[3].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
     }
   };
 
@@ -183,7 +245,81 @@ export class AppProvider extends React.Component {
     };
   };
 
+
+  test4 = () => {
+    console.log('hej')
+      var gameOrder = this.state.game4;
+      var results = this.randomTeam(
+        this.state.lb3[gameOrder],
+        this.state.lb3[gameOrder + 1],
+      );
+      console.log(gameOrder);
+      console.log(gameOrder + 1);
+  
+      var { winner, looser } = results;
+      console.log(winner)
+      console.log(looser)
+  
+      this.setState({
+        lb4: [
+          ...this.state.lb4,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+      });
+  
+      this.setState({
+        game4: this.state.game4 + 2,
+      });
+    
+    
+    }
+
+  test3 = () => {
+    if(this.state.game3 < 4) {
+    console.log('next');
+    var gameOrder = this.state.game3;
+    var results = this.randomTeam(
+      this.state.ub4[gameOrder],
+      this.state.ub4[gameOrder + 1],
+    );
+    console.log(gameOrder);
+    console.log(gameOrder + 1);
+
+    var { winner, looser } = results;
+    console.log(winner)
+    console.log(looser)
+
+    this.setState({
+      ub6: [
+        ...this.state.ub6,
+        {
+          name: winner.name,
+          logo: winner.logo,
+        },
+      ],
+      lb4: [
+        ...this.state.lb4,
+        {
+          name: looser.name,
+          logo: looser.logo,
+        },
+      ],
+    });
+
+    this.setState({
+      game3: this.state.game3 + 2,
+    });
+  } else {
+    this.test4();
+  }
+  }
+
+
   test2 = () => {
+    if(this.state.game2 < 7) {
     var reOrder = [
       {
         name: this.state.lb2[0].name,
@@ -243,6 +379,10 @@ export class AppProvider extends React.Component {
     this.setState({
       game2: this.state.game2 + 2,
     });
+  } else (
+
+    this.test3()
+  )
   };
 
   test = () => {
