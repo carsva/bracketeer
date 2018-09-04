@@ -10,8 +10,8 @@ class UB4 extends Component {
         {context => (
           <div className="UB4">
             <Game 
-            team0={context.state.placing(0).name} 
-            logo0={context.state.placing(0).logo} 
+            team0={context.state.placing(0).name0} 
+            logo0={context.state.placing(0).logo0} 
             // team1={context.state.teamsLeft[1].name} 
             // logo1={context.state.teamsLeft[1].logo} 
             round="Round 2"/>

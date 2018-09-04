@@ -9,7 +9,13 @@ class LB2 extends Component {
       <AppConsumer>
         {context => (
           <div className="LB2">
-            <Game/>
+             <Game 
+            team0={context.state.placing(0).name1} 
+            logo0={context.state.placing(0).logo1} 
+            // team1={context.state.teamsLeft[1].name} 
+            // logo1={context.state.teamsLeft[1].logo} 
+            round="Round 2"/>
+
             <Game/>
             <Game/>
             <Game/>

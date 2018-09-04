@@ -25,8 +25,10 @@ export class AppProvider extends React.Component {
     switch (expression) {
       case 0:
       return {
-        name: this.state.ub4.name,
-        logo: this.state.ub4.logo
+        name0: this.state.ub4.name,
+        logo0: this.state.ub4.logo,
+        name1: this.state.lb2.name,
+        logo1: this.state.lb2.logo
         }
       }
     }
