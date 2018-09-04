@@ -14,6 +14,7 @@ class UB6 extends Component {
             logo0={context.state.placing(12).logo0 ? context.state.placing(12).logo0 : ""}
             team1={context.state.placing(14).name0 ? context.state.placing(14).name0 : ""} 
             logo1={context.state.placing(14).logo0 ? context.state.placing(14).logo0 : ""}
+            round="Round 6"
             />
           </div>
         )}

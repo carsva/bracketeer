@@ -9,7 +9,12 @@ class GrandFinal extends Component {
       <AppConsumer>
         {context => (
           <div className="GrandFinal">
-            <Game/>
+            <Game
+            team0={context.state.placing(20).name0 ? context.state.placing(20).name0 : ""} 
+            logo0={context.state.placing(20).logo0 ? context.state.placing(20).logo0 : ""}
+            team1={context.state.placing(22).name1 ? context.state.placing(22).name1 : ""} 
+            logo1={context.state.placing(22).logo1 ? context.state.placing(22).logo1 : ""}
+            />
           </div>
         )}
       </AppConsumer>

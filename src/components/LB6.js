@@ -9,7 +9,13 @@ class LB6 extends Component {
       <AppConsumer>
         {context => (
           <div className="LB6">
-            <Game/>
+            <Game
+            team0={context.state.placing(20).name1 ? context.state.placing(20).name1 : ""} 
+            logo0={context.state.placing(20).logo1 ? context.state.placing(20).logo1 : ""}
+            team1={context.state.placing(21).name1 ? context.state.placing(21).name1 : ""} 
+            logo1={context.state.placing(21).logo1 ? context.state.placing(21).logo1 : ""}
+            round="Round 6"
+            />
           </div>
         )}
       </AppConsumer>
