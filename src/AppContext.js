@@ -21,104 +21,106 @@ export class AppProvider extends React.Component {
     teamsLeft: [],
   };
 
+ 
+
   placing = expression => {
     switch (expression) {
       case 0:
-      if (this.state.ub4[0]) {
-        return {
-          name0: this.state.ub4[0].name,
-          logo0: this.state.ub4[0].logo,
-          name1: this.state.lb2[0].name,
-          logo1: this.state.lb2[0].logo,
+        if (this.state.ub4[0]) {
+          return {
+            name0: this.state.ub4[0].name,
+            logo0: this.state.ub4[0].logo,
+            name1: this.state.lb2[0].name,
+            logo1: this.state.lb2[0].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
       case 1:
-      if (this.state.ub4[1]) {
-        return {
-          name0: this.state.ub4[1].name,
-          logo0: this.state.ub4[1].logo,
-          name1: this.state.lb2[1].name,
-          logo1: this.state.lb2[1].logo,
+        if (this.state.ub4[1]) {
+          return {
+            name0: this.state.ub4[1].name,
+            logo0: this.state.ub4[1].logo,
+            name1: this.state.lb2[1].name,
+            logo1: this.state.lb2[1].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
       case 2:
-      if (this.state.ub4[2]) {
-        return {
-          name0: this.state.ub4[2].name,
-          logo0: this.state.ub4[2].logo,
-          name1: this.state.lb2[2].name,
-          logo1: this.state.lb2[2].logo,
+        if (this.state.ub4[2]) {
+          return {
+            name0: this.state.ub4[2].name,
+            logo0: this.state.ub4[2].logo,
+            name1: this.state.lb2[2].name,
+            logo1: this.state.lb2[2].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
       case 3:
-      if (this.state.ub4[3]) {
-        return {
-          name0: this.state.ub4[3].name,
-          logo0: this.state.ub4[3].logo,
-          name1: this.state.lb2[3].name,
-          logo1: this.state.lb2[3].logo,
+        if (this.state.ub4[3]) {
+          return {
+            name0: this.state.ub4[3].name,
+            logo0: this.state.ub4[3].logo,
+            name1: this.state.lb2[3].name,
+            logo1: this.state.lb2[3].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
       case 4:
-      if (this.state.lb2[4]) {
-        return {
-          name0: this.state.ub4[4].name,
-          logo0: this.state.ub4[4].logo,
-          name1: this.state.lb2[4].name,
-          logo1: this.state.lb2[4].logo,
+        if (this.state.lb2[4]) {
+          return {
+            name0: this.state.ub4[4].name,
+            logo0: this.state.ub4[4].logo,
+            name1: this.state.lb2[4].name,
+            logo1: this.state.lb2[4].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
       case 5:
-      if (this.state.lb2[5]) {
-        return {
-          name0: this.state.ub4[5].name,
-          logo0: this.state.ub4[5].logo,
-          name1: this.state.lb2[5].name,
-          logo1: this.state.lb2[5].logo,
+        if (this.state.lb2[5]) {
+          return {
+            name0: this.state.ub4[5].name,
+            logo0: this.state.ub4[5].logo,
+            name1: this.state.lb2[5].name,
+            logo1: this.state.lb2[5].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
       case 6:
-      if (this.state.lb2[6]) {
-        return {
-          name0: this.state.ub4[6].name,
-          logo0: this.state.ub4[6].logo,
-          name1: this.state.lb2[6].name,
-          logo1: this.state.lb2[6].logo,
+        if (this.state.lb2[6]) {
+          return {
+            name0: this.state.ub4[6].name,
+            logo0: this.state.ub4[6].logo,
+            name1: this.state.lb2[6].name,
+            logo1: this.state.lb2[6].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
       case 7:
-      if (this.state.lb2[7]) {
-        return {
-          name0: this.state.ub4[7].name,
-          logo0: this.state.ub4[7].logo,
-          name1: this.state.lb2[7].name,
-          logo1: this.state.lb2[7].logo,
+        if (this.state.lb2[7]) {
+          return {
+            name0: this.state.ub4[7].name,
+            logo0: this.state.ub4[7].logo,
+            name1: this.state.lb2[7].name,
+            logo1: this.state.lb2[7].logo,
+          };
+        } else {
+          return '';
         }
-      } else {
-        return '';
-      }
-      break;
+        break;
     }
   };
 
@@ -142,51 +144,51 @@ export class AppProvider extends React.Component {
     };
   };
 
+  test2 = () => {
+    console.log('aight')
+  }
+
   test = () => {
-    var gameOrder = this.state.game;
-    var results = this.randomTeam(
-      this.state.startingTeams[gameOrder],
-      this.state.startingTeams[gameOrder + 1],
-    );
-    var { winner, looser } = results;
+    if (this.state.game < 8) {
+      var gameOrder = this.state.game;
+      var results = this.randomTeam(
+        this.state.startingTeams[gameOrder],
+        this.state.startingTeams[gameOrder + 1],
+      );
+      var { winner, looser } = results;
 
-    
+      this.setState({
+        ub4: [
+          ...this.state.ub4,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+        lb2: [
+          ...this.state.lb2,
+          {
+            name: looser.name,
+            logo: looser.logo,
+          },
+        ],
+      });
 
-    this.setState({
-      ub4: [
-        ...this.state.ub4,
-        {
-          name: winner.name,
-          logo: winner.logo,
-        },
-      ],
-      lb2: [
-        ...this.state.lb2,
-        {
-          name: looser.name,
-          logo: looser.logo,
-        },
-      ],
-    });
+      this.setState({
+        game: this.state.game + 1,
+      });
 
-    
-    
+      var teams = this.state.startingTeams;
+      var filtered = teams.filter(team => {
+        return team !== winner;
+      });
 
-    this.setState({
-      game: this.state.game + 1,
-    });
-    
-
-    var teams = this.state.startingTeams;
-    var filtered = teams.filter(team => {
-      return team !== winner;
-    });
- 
-
-    this.setState({
-      startingTeams: filtered,
-    });
-
+      this.setState({
+        startingTeams: filtered,
+      });
+    } else {
+      this.test2();
+    }
   };
 
   componentWillMount() {
