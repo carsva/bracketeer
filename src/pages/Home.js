@@ -22,8 +22,9 @@ class Home extends Component {
             <button onClick={context.state.test}>Action</button>
             </div>
               </div>
-              <div>
-                <Team/>
+              <div className="winner">
+                <h3>{context.state.placing(23).name0 ? context.state.placing(23).name0 : ""}</h3> 
+                <img src={context.state.placing(23).logo0 ? context.state.placing(23).logo0 : ""}></img>
               </div>
               <div>
                 {console.log(context.state)}           

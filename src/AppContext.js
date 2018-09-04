@@ -275,6 +275,16 @@ export class AppProvider extends React.Component {
           return '';
         }
         break;
+        case 23:
+        if (this.state.winner[0]) {
+          return {
+            name0: this.state.winner[0].name,
+            logo0: this.state.winner[0].logo,
+          };
+        } else {
+          return '';
+        }
+        break;
     }
   };
 
