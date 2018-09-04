@@ -71,6 +71,54 @@ export class AppProvider extends React.Component {
         return '';
       }
       break;
+      case 4:
+      if (this.state.lb2[4]) {
+        return {
+          name0: this.state.ub4[4].name,
+          logo0: this.state.ub4[4].logo,
+          name1: this.state.lb2[4].name,
+          logo1: this.state.lb2[4].logo,
+        }
+      } else {
+        return '';
+      }
+      break;
+      case 5:
+      if (this.state.lb2[5]) {
+        return {
+          name0: this.state.ub4[5].name,
+          logo0: this.state.ub4[5].logo,
+          name1: this.state.lb2[5].name,
+          logo1: this.state.lb2[5].logo,
+        }
+      } else {
+        return '';
+      }
+      break;
+      case 6:
+      if (this.state.lb2[6]) {
+        return {
+          name0: this.state.ub4[6].name,
+          logo0: this.state.ub4[6].logo,
+          name1: this.state.lb2[6].name,
+          logo1: this.state.lb2[6].logo,
+        }
+      } else {
+        return '';
+      }
+      break;
+      case 7:
+      if (this.state.lb2[7]) {
+        return {
+          name0: this.state.ub4[7].name,
+          logo0: this.state.ub4[7].logo,
+          name1: this.state.lb2[7].name,
+          logo1: this.state.lb2[7].logo,
+        }
+      } else {
+        return '';
+      }
+      break;
     }
   };
 
