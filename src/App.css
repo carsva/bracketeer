@@ -112,6 +112,10 @@
     justify-content: center;
 }
 
+.winnerContainer {
+    display: flex;
+}
+
 .winner {
     width: 7em;
     height:4em;
@@ -179,7 +183,8 @@
     color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
 .LB4 {
@@ -266,7 +271,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .game_header > p {
