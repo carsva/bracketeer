@@ -676,11 +676,27 @@ export class AppProvider extends React.Component {
     }
   };
 
+  shuffle = () => {
+    let teams = TeamsApi.Teams;
+    
+    function random(a) {
+      for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+      }
+      var test = random(teams);
+
+      return test;
+  }
+
   componentWillMount() {
     let teams = TeamsApi.Teams;
+    let shuffledTeams = this.shuffle();
     this.setState({
-      teamsLeft: teams,
-      startingTeams: teams,
+      teamsLeft: shuffledTeams,
+      startingTeams: shuffledTeams,
     });
   }
 
