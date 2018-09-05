@@ -673,10 +673,19 @@ export class AppProvider extends React.Component {
 
   //   console.log(this.state) 
 
+<<<<<<< HEAD
   // if (this.state.random.length === 16) {
   //   
   // }
 
+=======
+  if (this.state.random.length === 16) {
+    this.setState({
+      teamsLeft: this.state.random,
+    })
+  }
+  
+>>>>>>> parent of 6e325fe... Added randomized functionality of teamsetup
   };
   
 
