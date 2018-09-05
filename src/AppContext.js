@@ -658,9 +658,10 @@ export class AppProvider extends React.Component {
   if (this.state.random.length === 16) {
     this.setState({
       teamsLeft: this.state.random,
+      startingTeams: this.state.random,
     })
   }
-  
+
   };
   
 
