@@ -12,23 +12,10 @@ class Home extends Component {
       <AppConsumer>
         {context => (
           <div>
-<<<<<<< HEAD
           <div className="MasterContainer">
             <div className="FirstContainer">
             <UpperBracket/>
             <LowerBracket/>
-=======
-            <div className="MasterContainer">
-              <div className="FirstContainer">
-                <UpperBracket />
-                <LowerBracket />
-              </div>
-              <div className="SecondContainer">
-                <GrandFinal />
-                <button onClick={context.state.test}>Action</button>
-                {/* <button onClick={context.state.shuffle}>Shuffle</button> */}
-              </div>
->>>>>>> 9940d7efe818bea9668a1c826ddeb5b69a778eae
             </div>
             <div className="SecondContainer">
             <GrandFinal/>
