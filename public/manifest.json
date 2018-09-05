@@ -1,13 +1,15 @@
 {
-  "short_name": "Another app",
-  "name": "Another app",
-  "icons": [{
-    "src": "/logo.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }],
+  "short_name": "Bracketeer",
+  "name": "Bracketeer",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ff9999",
-  "background_color": "#ff9999"
+  "theme_color": "black",
+  "background_color": "black"
 }
