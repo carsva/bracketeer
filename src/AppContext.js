@@ -685,6 +685,9 @@ export class AppProvider extends React.Component {
     })
   }
   
+<<<<<<< HEAD
+>>>>>>> parent of 6e325fe... Added randomized functionality of teamsetup
+=======
 >>>>>>> parent of 6e325fe... Added randomized functionality of teamsetup
   };
   
