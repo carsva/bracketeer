@@ -1,5 +1,6 @@
 import React from 'react';
 import TeamsApi from './api/TeamsApi';
+import { getFlags } from './api/FlagsApi';
 
 export const AppContext = React.createContext('plant');
 
@@ -38,7 +39,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 1:
         if (this.state.ub4[1]) {
           return {
@@ -50,7 +51,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 2:
         if (this.state.ub4[2]) {
           return {
@@ -62,7 +63,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 3:
         if (this.state.ub4[3]) {
           return {
@@ -74,7 +75,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 4:
         if (this.state.lb2[4]) {
           return {
@@ -86,7 +87,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 5:
         if (this.state.lb2[5]) {
           return {
@@ -98,7 +99,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 6:
         if (this.state.lb2[6]) {
           return {
@@ -110,7 +111,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 7:
         if (this.state.lb2[7]) {
           return {
@@ -122,7 +123,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 8:
         if (this.state.lb3[0]) {
           return {
@@ -132,7 +133,7 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+
       case 9:
         if (this.state.lb3[1]) {
           return {
@@ -142,8 +143,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 10:
+
+      case 10:
         if (this.state.lb3[2]) {
           return {
             name0: this.state.lb3[2].name,
@@ -152,8 +153,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 11:
+
+      case 11:
         if (this.state.lb3[3]) {
           return {
             name0: this.state.lb3[3].name,
@@ -162,8 +163,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 12:
+
+      case 12:
         if (this.state.ub6[0]) {
           return {
             name0: this.state.ub6[0].name,
@@ -172,8 +173,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 13:
+
+      case 13:
         if (this.state.lb4[0]) {
           return {
             name0: this.state.lb4[0].name,
@@ -182,8 +183,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 14:
+
+      case 14:
         if (this.state.ub6[1]) {
           return {
             name0: this.state.ub6[1].name,
@@ -192,8 +193,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 15:
+
+      case 15:
         if (this.state.lb4[1]) {
           return {
             name0: this.state.lb4[1].name,
@@ -202,8 +203,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 16:
+
+      case 16:
         if (this.state.lb4[2]) {
           return {
             name0: this.state.lb4[2].name,
@@ -212,8 +213,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 17:
+
+      case 17:
         if (this.state.lb4[3]) {
           return {
             name0: this.state.lb4[3].name,
@@ -222,8 +223,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 18:
+
+      case 18:
         if (this.state.lb5[0]) {
           return {
             name0: this.state.lb5[0].name,
@@ -232,8 +233,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 19:
+
+      case 19:
         if (this.state.lb5[1]) {
           return {
             name0: this.state.lb5[1].name,
@@ -242,8 +243,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 20:
+
+      case 20:
         if (this.state.grandFinal[0]) {
           return {
             name0: this.state.grandFinal[0].name,
@@ -254,8 +255,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 21:
+
+      case 21:
         if (this.state.lb6[1]) {
           return {
             name1: this.state.lb6[1].name,
@@ -264,8 +265,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 22:
+
+      case 22:
         if (this.state.grandFinal[1]) {
           return {
             name1: this.state.grandFinal[1].name,
@@ -274,8 +275,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
-        case 23:
+
+      case 23:
         if (this.state.winner[0]) {
           return {
             name0: this.state.winner[0].name,
@@ -284,7 +285,8 @@ export class AppProvider extends React.Component {
         } else {
           return '';
         }
-        break;
+      default:
+      // do nothing
     }
   };
 
@@ -309,191 +311,150 @@ export class AppProvider extends React.Component {
   };
 
   test10 = () => {
-    console.log(this.state.winner[0].name)
-  }
+    console.log(this.state.winner[0].name);
+  };
 
   test9 = () => {
-    if(this.state.winner < 1) {
-    var results = this.randomTeam(
-      this.state.grandFinal[0],
-      this.state.grandFinal[1],
-    );
-  
-    var { winner } = results;
+    if (this.state.winner < 1) {
+      var results = this.randomTeam(
+        this.state.grandFinal[0],
+        this.state.grandFinal[1],
+      );
 
-    this.setState({
-      winner: [
-        {
-          name: winner.name,
-          logo: winner.logo,
-        },
-      ]
-    });
-  } else {
-    this.test10();
-  }
-}
+      var { winner } = results;
+
+      this.setState({
+        winner: [
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+      });
+    } else {
+      this.test10();
+    }
+  };
 
   test8 = () => {
-    if(this.state.grandFinal.length < 2) {
-    console.log('sista nu calle')
-    var results = this.randomTeam(
-      this.state.lb6[0],
-      this.state.lb6[1],
-    );
-  
-    var { winner } = results;
+    if (this.state.grandFinal.length < 2) {
+      console.log('sista nu calle');
+      var results = this.randomTeam(this.state.lb6[0], this.state.lb6[1]);
 
-    this.setState({
-  
-      grandFinal: [
-        ...this.state.grandFinal,
-        {
-          name: winner.name,
-          logo: winner.logo,
-        },
-      ],
-    });
-  } else {
-    this.test9();
-  }
-  }
+      var { winner } = results;
+
+      this.setState({
+        grandFinal: [
+          ...this.state.grandFinal,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+      });
+    } else {
+      this.test9();
+    }
+  };
 
   test7 = () => {
-    if(this.state.lb6.length < 2) {
-    console.log('trooott')
-    var results = this.randomTeam(
-      this.state.lb5[0],
-      this.state.lb5[1],
-    );
-  
-    var { winner } = results;
+    if (this.state.lb6.length < 2) {
+      console.log('trooott');
+      var results = this.randomTeam(this.state.lb5[0], this.state.lb5[1]);
 
-    this.setState({
-  
-      lb6: [
-        ...this.state.lb6,
-        {
-          name: winner.name,
-          logo: winner.logo,
-        },
-      ],
-    });
-  } else {
-    this.test8();
-  }
-  }
+      var { winner } = results;
 
-
+      this.setState({
+        lb6: [
+          ...this.state.lb6,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+      });
+    } else {
+      this.test8();
+    }
+  };
 
   test6 = () => {
-    if(this.state.lb6.length < 1) {
-    var results = this.randomTeam(
-      this.state.ub6[0],
-      this.state.ub6[1],
-    );
-  
-    var { winner, looser } = results;
+    if (this.state.lb6.length < 1) {
+      var results = this.randomTeam(this.state.ub6[0], this.state.ub6[1]);
 
-    this.setState({
-      grandFinal: [
-        ...this.state.grandFinal,
-        {
-          name: winner.name,
-          logo: winner.logo,
-        },
-      ],
-      lb6: [
-        ...this.state.lb6,
-        {
-          name: looser.name,
-          logo: looser.logo,
-        },
-      ],
-    });
+      var { winner, looser } = results;
 
-  } else {
-    this.test7();
-  }
-}
-
-
+      this.setState({
+        grandFinal: [
+          ...this.state.grandFinal,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+        lb6: [
+          ...this.state.lb6,
+          {
+            name: looser.name,
+            logo: looser.logo,
+          },
+        ],
+      });
+    } else {
+      this.test7();
+    }
+  };
 
   test5 = () => {
-    
-    if(this.state.game5 < 4) {
-
-    var reOrder = [
-      {
-        name: this.state.lb4[0].name,
-        logo: this.state.lb4[0].logo,
-      },
-      {
-        name: this.state.lb4[2].name,
-        logo: this.state.lb4[2].logo,
-      },
-      {
-        name: this.state.lb4[1].name,
-        logo: this.state.lb4[1].logo,
-      },
-      {
-        name: this.state.lb4[3].name,
-        logo: this.state.lb4[3].logo,
-      },
-    ];
-    console.log(reOrder)
-
-    var gameOrder = this.state.game5;
-    var results = this.randomTeam(
-      reOrder[gameOrder],
-      reOrder[gameOrder + 1],
-    );
-    console.log(gameOrder);
-    console.log(gameOrder + 1);
-
-    var { winner } = results;
-
-    this.setState({
-      lb5: [
-        ...this.state.lb5,
+    if (this.state.game5 < 4) {
+      var reOrder = [
         {
-          name: winner.name,
-          logo: winner.logo,
+          name: this.state.lb4[0].name,
+          logo: this.state.lb4[0].logo,
         },
-      ],
-    });
+        {
+          name: this.state.lb4[2].name,
+          logo: this.state.lb4[2].logo,
+        },
+        {
+          name: this.state.lb4[1].name,
+          logo: this.state.lb4[1].logo,
+        },
+        {
+          name: this.state.lb4[3].name,
+          logo: this.state.lb4[3].logo,
+        },
+      ];
+      console.log(reOrder);
 
-    this.setState({
-      game5: this.state.game5 + 2,
-    });
+      var gameOrder = this.state.game5;
+      var results = this.randomTeam(reOrder[gameOrder], reOrder[gameOrder + 1]);
+      console.log(gameOrder);
+      console.log(gameOrder + 1);
 
+      var { winner } = results;
 
+      this.setState({
+        lb5: [
+          ...this.state.lb5,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+      });
 
-
-
-
-  } else {
-    this.test6();
-  }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      this.setState({
+        game5: this.state.game5 + 2,
+      });
+    } else {
+      this.test6();
+    }
+  };
 
   test4 = () => {
-    if(this.state.game4 < 3) {
-    console.log('hej')
+    if (this.state.game4 < 3) {
+      console.log('hej');
       var gameOrder = this.state.game4;
       var results = this.randomTeam(
         this.state.lb3[gameOrder],
@@ -501,11 +462,11 @@ export class AppProvider extends React.Component {
       );
       console.log(gameOrder);
       console.log(gameOrder + 1);
-  
+
       var { winner, looser } = results;
-      console.log(winner)
-      console.log(looser)
-  
+      console.log(winner);
+      console.log(looser);
+
       this.setState({
         lb4: [
           ...this.state.lb4,
@@ -515,122 +476,114 @@ export class AppProvider extends React.Component {
           },
         ],
       });
-  
+
       this.setState({
         game4: this.state.game4 + 2,
       });
-    
     } else {
       this.test5();
     }
-    }
+  };
 
   test3 = () => {
-    if(this.state.game3 < 4) {
-    console.log('next');
-    var gameOrder = this.state.game3;
-    var results = this.randomTeam(
-      this.state.ub4[gameOrder],
-      this.state.ub4[gameOrder + 1],
-    );
-    console.log(gameOrder);
-    console.log(gameOrder + 1);
+    if (this.state.game3 < 4) {
+      console.log('next');
+      var gameOrder = this.state.game3;
+      var results = this.randomTeam(
+        this.state.ub4[gameOrder],
+        this.state.ub4[gameOrder + 1],
+      );
+      console.log(gameOrder);
+      console.log(gameOrder + 1);
 
-    var { winner, looser } = results;
-    console.log(winner)
-    console.log(looser)
+      var { winner, looser } = results;
+      console.log(winner);
+      console.log(looser);
 
-    this.setState({
-      ub6: [
-        ...this.state.ub6,
-        {
-          name: winner.name,
-          logo: winner.logo,
-        },
-      ],
-      lb4: [
-        ...this.state.lb4,
-        {
-          name: looser.name,
-          logo: looser.logo,
-        },
-      ],
-    });
+      this.setState({
+        ub6: [
+          ...this.state.ub6,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+        lb4: [
+          ...this.state.lb4,
+          {
+            name: looser.name,
+            logo: looser.logo,
+          },
+        ],
+      });
 
-    this.setState({
-      game3: this.state.game3 + 2,
-    });
-  } else {
-    this.test4();
-  }
-  }
-
+      this.setState({
+        game3: this.state.game3 + 2,
+      });
+    } else {
+      this.test4();
+    }
+  };
 
   test2 = () => {
-    if(this.state.game2 < 7) {
-    var reOrder = [
-      {
-        name: this.state.lb2[0].name,
-        logo: this.state.lb2[0].logo,
-      },
-      {
-        name: this.state.lb2[4].name,
-        logo: this.state.lb2[4].logo,
-      },
-      {
-        name: this.state.lb2[1].name,
-        logo: this.state.lb2[1].logo,
-      },
-      {
-        name: this.state.lb2[5].name,
-        logo: this.state.lb2[5].logo,
-      },
-      {
-        name: this.state.lb2[2].name,
-        logo: this.state.lb2[2].logo,
-      },
-      {
-        name: this.state.lb2[6].name,
-        logo: this.state.lb2[6].logo,
-      },
-      {
-        name: this.state.lb2[3].name,
-        logo: this.state.lb2[3].logo,
-      },
-      {
-        name: this.state.lb2[7].name,
-        logo: this.state.lb2[7].logo,
-      },
-    ];
-
-    console.log(reOrder);
-    var gameOrder = this.state.game2;
-    var results = this.randomTeam(
-      reOrder[gameOrder],
-      reOrder[gameOrder + 1],
-    );
-    console.log(gameOrder);
-    console.log(gameOrder + 1);
-
-    var { winner } = results;
-
-    this.setState({
-      lb3: [
-        ...this.state.lb3,
+    if (this.state.game2 < 7) {
+      var reOrder = [
         {
-          name: winner.name,
-          logo: winner.logo,
+          name: this.state.lb2[0].name,
+          logo: this.state.lb2[0].logo,
         },
-      ],
-    });
+        {
+          name: this.state.lb2[4].name,
+          logo: this.state.lb2[4].logo,
+        },
+        {
+          name: this.state.lb2[1].name,
+          logo: this.state.lb2[1].logo,
+        },
+        {
+          name: this.state.lb2[5].name,
+          logo: this.state.lb2[5].logo,
+        },
+        {
+          name: this.state.lb2[2].name,
+          logo: this.state.lb2[2].logo,
+        },
+        {
+          name: this.state.lb2[6].name,
+          logo: this.state.lb2[6].logo,
+        },
+        {
+          name: this.state.lb2[3].name,
+          logo: this.state.lb2[3].logo,
+        },
+        {
+          name: this.state.lb2[7].name,
+          logo: this.state.lb2[7].logo,
+        },
+      ];
 
-    this.setState({
-      game2: this.state.game2 + 2,
-    });
-  } else (
+      console.log(reOrder);
+      var gameOrder = this.state.game2;
+      var results = this.randomTeam(reOrder[gameOrder], reOrder[gameOrder + 1]);
+      console.log(gameOrder);
+      console.log(gameOrder + 1);
 
-    this.test3()
-  )
+      var { winner } = results;
+
+      this.setState({
+        lb3: [
+          ...this.state.lb3,
+          {
+            name: winner.name,
+            logo: winner.logo,
+          },
+        ],
+      });
+
+      this.setState({
+        game2: this.state.game2 + 2,
+      });
+    } else this.test3();
   };
 
   test = () => {
@@ -678,26 +631,71 @@ export class AppProvider extends React.Component {
 
   shuffle = () => {
     let teams = TeamsApi.Teams;
-    
+
     function random(a) {
       for (let i = a.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [a[i], a[j]] = [a[j], a[i]];
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
       }
       return a;
-      }
-      var test = random(teams);
+    }
+    var test = random(teams);
 
-      return test;
-  }
+    return test;
+  };
+
+  flags = () => {
+ 
+    if (this.state.countries) {
+      var countries = this.state.countries;
+
+      var random = () => {
+        return Math.floor(Math.random() * 250);
+      };
+
+      console.log(this.state.countries)
+      
+      var randomArr = () => {
+        var randomCountries = [];
+        for (var i = 16; i > 0; i--) {
+          var slump = this.state.countries[random()]
+          randomCountries.push({
+            name: slump.name.substring(0,12),
+            logo: slump.flag,
+          })
+          
+        }
+        return randomCountries;
+      }
+
+      var competingCountries = randomArr();
+      
+      this.setState({
+        startingTeams: competingCountries,
+        teamsLeft: competingCountries,
+      })
+
+      console.log(randomArr())
+      console.log(this.state)
+      
+
+      console.log(this.state.countries[random()].name);
+    }
+  };
 
   componentWillMount() {
-    let teams = TeamsApi.Teams;
     let shuffledTeams = this.shuffle();
     this.setState({
       teamsLeft: shuffledTeams,
       startingTeams: shuffledTeams,
     });
+
+    getFlags().then(data => {
+      this.setState({
+        countries: data,
+      });
+    });
+
   }
 
   render() {
@@ -706,6 +704,7 @@ export class AppProvider extends React.Component {
         ...this.state,
         test: this.test,
         placing: this.placing,
+        flags: this.flags,
       },
     };
 

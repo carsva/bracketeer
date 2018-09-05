@@ -3,7 +3,6 @@ import { AppConsumer } from '../AppContext';
 import LowerBracket from './../components/LowerBracket';
 import UpperBracket from './../components/UpperBracket';
 import GrandFinal from './../components/GrandFinal';
-import Team from './../components/Team';
 
 class Home extends Component {
   render() {
@@ -20,12 +19,13 @@ class Home extends Component {
             <div className="SecondContainer">
             <GrandFinal/>
             <button onClick={context.state.test}>Action</button>
+            <button onClick={context.state.flags}>Flags</button>
             </div>
               </div>
               <div className="winnerContainer">
               <div className="winner">
                 <h3>{context.state.placing(23).name0 ? context.state.placing(23).name0 : ""}</h3> 
-                <img src={context.state.placing(23).logo0 ? context.state.placing(23).logo0 : ""}></img>
+                <img alt="" src={context.state.placing(23).logo0 ? context.state.placing(23).logo0 : ""}></img>
               </div>
               </div>
               {/* <div>
