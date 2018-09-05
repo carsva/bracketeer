@@ -19,7 +19,7 @@ class Home extends Component {
               <div className="SecondContainer">
                 <GrandFinal />
                 <button onClick={context.state.test}>Action</button>
-                <button onClick={context.state.shuffle}>Shuffle</button>
+                {/* <button onClick={context.state.shuffle}>Shuffle</button> */}
               </div>
             </div>
             <div className="winner">

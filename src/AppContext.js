@@ -629,38 +629,53 @@ export class AppProvider extends React.Component {
   };
 
   shuffle = () => {
-    console.log('shuffle')
-    var teams = this.state.test;
-    var newTeams = [];
-    var random = () => {
-      return Math.floor(Math.random() * teams.length);
-    }
-      var selectedTeam = teams[random()];
-      console.log(selectedTeam)
+  var teams = TeamsApi.Teams;  
 
-    var filtered = teams.filter(team => {
-      return team !== selectedTeam;
-    })
-
-
-    console.log(filtered)
-
-    this.setState({
-      test: filtered,
-      random: [
-        ...this.state.random,
-        selectedTeam,
-      ],
-    })
-
-    console.log(this.state) 
-
-  if (this.state.random.length === 16) {
-    this.setState({
-      teamsLeft: this.state.random,
-      startingTeams: this.state.random,
-    })
+    function shuffleArray(a) {
+      for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
   }
+
+    var test = shuffleArray(teams);
+    console.log(test)
+
+    this.setState({
+          teamsLeft: test,
+          startingTeams: test,
+        })
+    
+  //   console.log('shuffle')
+    
+    
+  //   var random = () => {
+  //     return Math.floor(Math.random() * teams.length);
+  //   }
+  //     var selectedTeam = teams[random()];
+  //     console.log(selectedTeam)
+
+  //   var filtered = teams.filter(team => {
+  //     return team !== selectedTeam;
+  //   })
+
+
+  //   console.log(filtered)
+
+  //   this.setState({
+  //     test: filtered,
+  //     random: [
+  //       ...this.state.random,
+  //       selectedTeam,
+  //     ],
+  //   })
+
+  //   console.log(this.state) 
+
+  // if (this.state.random.length === 16) {
+  //   
+  // }
 
   };
   
@@ -669,10 +684,9 @@ export class AppProvider extends React.Component {
     let teams = TeamsApi.Teams;
     this.setState({
       teamsLeft: teams,
-      startingTeams: teams,
+      startingTeams: this.shuffle(),
       test: teams,
     });
-    
   }
 
   render() {
