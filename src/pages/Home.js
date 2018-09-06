@@ -29,11 +29,11 @@ class Home extends Component {
                 <img alt="" src={context.state.placing(23).logo0 ? context.state.placing(23).logo0 : ""}></img>
               </div>
               </div>
-              {/* <div>
-                {console.log(context.state)}           
+              <div>
+                {/* {console.log(context.state)}            */}
                 <h3>Data that lives in the context</h3>
                 <pre>{JSON.stringify(context, null, 4)}</pre>
-              </div> */}
+              </div>
             </div>
         )}
       </AppConsumer>

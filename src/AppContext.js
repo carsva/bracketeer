@@ -245,7 +245,7 @@ export class AppProvider extends React.Component {
         }
 
       case 20:
-        if (this.state.grandFinal[0]) {
+        if (this.state.grandFinal[0] && this.state.lb6[0]) {
           return {
             name0: this.state.grandFinal[0].name,
             logo0: this.state.grandFinal[0].logo,
@@ -567,6 +567,7 @@ export class AppProvider extends React.Component {
   };
 
   test = () => {
+    console.log(this.state)
     if (this.state.game < 8) {
       var gameOrder = this.state.game;
       var results = this.randomTeam(
@@ -574,7 +575,7 @@ export class AppProvider extends React.Component {
         this.state.startingTeams[gameOrder + 1],
       );
       var { winner, looser } = results;
-
+      console.log(results)
       this.setState({
         ub4: [
           ...this.state.ub4,
@@ -656,9 +657,30 @@ export class AppProvider extends React.Component {
   };
 
   clear = () => {
+    this.setState({
+      game: 0,
+      game2: 0,
+      game3: 0,
+      game4: 0,
+      game5: 0,
+      ub2: [],
+      ub4: [],
+      ub6: [],
+      lb1: [],
+      lb2: [],
+      lb3: [],
+      lb4: [],
+      lb5: [],
+      lb6: [],
+      grandFinal: [],
+      winner: [],
+    })
 
-    console.log('clear')
-
+    let shuffledTeams = this.shuffle();
+    this.setState({
+      teamsLeft: shuffledTeams,
+      startingTeams: shuffledTeams,
+    });
   }
 
   componentWillMount() {
