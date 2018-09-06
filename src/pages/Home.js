@@ -18,8 +18,8 @@ class Home extends Component {
             </div>
             <div className="SecondContainer">
             <GrandFinal/>
-            <button onClick={context.state.test}>Action</button>
-            <button onClick={context.state.flags}>Flags</button>
+            <button className="resolve_button" onClick={context.state.test}>Resolve</button>
+            <button className="flag_button" onClick={context.state.flags}>Flags</button>
             </div>
               </div>
               <div className="winnerContainer">
