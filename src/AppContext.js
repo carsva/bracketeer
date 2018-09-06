@@ -311,7 +311,6 @@ export class AppProvider extends React.Component {
   };
 
   test10 = () => {
-    console.log(this.state.winner[0].name);
   };
 
   test9 = () => {
@@ -338,7 +337,6 @@ export class AppProvider extends React.Component {
 
   test8 = () => {
     if (this.state.grandFinal.length < 2) {
-      console.log('sista nu calle');
       var results = this.randomTeam(this.state.lb6[0], this.state.lb6[1]);
 
       var { winner } = results;
@@ -359,7 +357,6 @@ export class AppProvider extends React.Component {
 
   test7 = () => {
     if (this.state.lb6.length < 2) {
-      console.log('trooott');
       var results = this.randomTeam(this.state.lb5[0], this.state.lb5[1]);
 
       var { winner } = results;
@@ -425,12 +422,9 @@ export class AppProvider extends React.Component {
           logo: this.state.lb4[3].logo,
         },
       ];
-      console.log(reOrder);
 
       var gameOrder = this.state.game5;
       var results = this.randomTeam(reOrder[gameOrder], reOrder[gameOrder + 1]);
-      console.log(gameOrder);
-      console.log(gameOrder + 1);
 
       var { winner } = results;
 
@@ -454,18 +448,13 @@ export class AppProvider extends React.Component {
 
   test4 = () => {
     if (this.state.game4 < 3) {
-      console.log('hej');
       var gameOrder = this.state.game4;
       var results = this.randomTeam(
         this.state.lb3[gameOrder],
         this.state.lb3[gameOrder + 1],
       );
-      console.log(gameOrder);
-      console.log(gameOrder + 1);
 
-      var { winner, looser } = results;
-      console.log(winner);
-      console.log(looser);
+      var { winner } = results;
 
       this.setState({
         lb4: [
@@ -487,18 +476,13 @@ export class AppProvider extends React.Component {
 
   test3 = () => {
     if (this.state.game3 < 4) {
-      console.log('next');
       var gameOrder = this.state.game3;
       var results = this.randomTeam(
         this.state.ub4[gameOrder],
         this.state.ub4[gameOrder + 1],
       );
-      console.log(gameOrder);
-      console.log(gameOrder + 1);
 
       var { winner, looser } = results;
-      console.log(winner);
-      console.log(looser);
 
       this.setState({
         ub6: [
@@ -562,12 +546,8 @@ export class AppProvider extends React.Component {
         },
       ];
 
-      console.log(reOrder);
       var gameOrder = this.state.game2;
       var results = this.randomTeam(reOrder[gameOrder], reOrder[gameOrder + 1]);
-      console.log(gameOrder);
-      console.log(gameOrder + 1);
-
       var { winner } = results;
 
       this.setState({
@@ -647,13 +627,10 @@ export class AppProvider extends React.Component {
   flags = () => {
  
     if (this.state.countries) {
-      var countries = this.state.countries;
-
       var random = () => {
         return Math.floor(Math.random() * 250);
       };
 
-      console.log(this.state.countries)
       
       var randomArr = () => {
         var randomCountries = [];
@@ -675,11 +652,6 @@ export class AppProvider extends React.Component {
         teamsLeft: competingCountries,
       })
 
-      console.log(randomArr())
-      console.log(this.state)
-      
-
-      console.log(this.state.countries[random()].name);
     }
   };
 
