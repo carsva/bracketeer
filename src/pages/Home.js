@@ -20,6 +20,7 @@ class Home extends Component {
             <GrandFinal/>
             <button className="resolve_button" onClick={context.state.test}>Resolve</button>
             <button className="flag_button" onClick={context.state.flags}>Flags</button>
+            <button className="clear_button" onClick={context.state.clear}>Clear</button>
             </div>
               </div>
               <div className="winnerContainer">

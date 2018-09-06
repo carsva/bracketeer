@@ -655,6 +655,12 @@ export class AppProvider extends React.Component {
     }
   };
 
+  clear = () => {
+
+    console.log('clear')
+
+  }
+
   componentWillMount() {
     let shuffledTeams = this.shuffle();
     this.setState({
@@ -677,6 +683,7 @@ export class AppProvider extends React.Component {
         test: this.test,
         placing: this.placing,
         flags: this.flags,
+        clear: this.clear,
       },
     };
 
