@@ -626,6 +626,7 @@ export class AppProvider extends React.Component {
   };
 
   dota = () => { 
+    this.clear();
     let shuffledTeams = this.shuffle();
     this.setState({
       teamsLeft: shuffledTeams,
@@ -635,7 +636,8 @@ export class AppProvider extends React.Component {
   }
 
   flags = () => {
- 
+    
+    this.clear();
     if (this.state.countries) {
       var random = () => {
         return Math.floor(Math.random() * 250);
