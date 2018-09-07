@@ -44,7 +44,7 @@ class Home extends Component {
                 Clear
               </button>
 
-              <button className="dota_button" onClick={context.state.flags}>
+              <button className="dota_button" onClick={context.state.dota}>
                 Dota teams
               </button>
               <button className="flag_button" onClick={context.state.flags}>

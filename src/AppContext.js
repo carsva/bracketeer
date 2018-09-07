@@ -625,6 +625,15 @@ export class AppProvider extends React.Component {
     return test;
   };
 
+  dota = () => { 
+    let shuffledTeams = this.shuffle();
+    this.setState({
+      teamsLeft: shuffledTeams,
+      startingTeams: shuffledTeams,
+    });
+
+  }
+
   flags = () => {
  
     if (this.state.countries) {
@@ -706,6 +715,7 @@ export class AppProvider extends React.Component {
         placing: this.placing,
         flags: this.flags,
         clear: this.clear,
+        dota: this.dota,
       },
     };
 
