@@ -325,7 +325,7 @@ export class AppProvider extends React.Component {
       this.setState({
         winner: [
           {
-            name: winner.name,
+            name: winner.name.substring(0,15),
             logo: winner.logo,
           },
         ],
@@ -649,7 +649,7 @@ export class AppProvider extends React.Component {
         for (var i = 16; i > 0; i--) {
           var slump = this.state.countries[random()]
           randomCountries.push({
-            name: slump.name.substring(0,12),
+            name: slump.name,
             logo: slump.flag,
           })
           

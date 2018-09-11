@@ -29,6 +29,7 @@ class Home extends Component {
                 <img
                   alt=""
                   src={
+                    
                     context.state.placing(23).logo0
                       ? context.state.placing(23).logo0
                       : ''
