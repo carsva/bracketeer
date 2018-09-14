@@ -325,7 +325,7 @@ export class AppProvider extends React.Component {
       this.setState({
         winner: [
           {
-            name: winner.name.substring(0,15),
+            name: winner.name.substring(0,30),
             logo: winner.logo,
           },
         ],
