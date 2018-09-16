@@ -637,34 +637,29 @@ export class AppProvider extends React.Component {
 
   flags = () => {
     
-    this.clear();
-    if (this.state.countries) {
-      var random = () => {
-        return Math.floor(Math.random() * 250);
-      };
+    
+    var countries = this.state.countries;
+    var sixteen = [];
 
+    for (var i = 0; i < 16; i++) {
+      var index = Math.floor(Math.random() * countries.length);
       
-      var randomArr = () => {
-        var randomCountries = [];
-        for (var i = 16; i > 0; i--) {
-          var slump = this.state.countries[random()]
-          randomCountries.push({
-            name: slump.name,
-            logo: slump.flag,
-          })
-          
-        }
-        return randomCountries;
-      }
+      // sixteen.push(countries[index]);
 
-      var competingCountries = randomArr();
+      sixteen.push({
+                name: countries[index].name,
+                logo: countries[index].flag,
+              })
+
+      countries.splice(index, 1);
+    }
       
       this.setState({
-        startingTeams: competingCountries,
-        teamsLeft: competingCountries,
+        startingTeams: sixteen,
+        teamsLeft: sixteen,
       })
 
-    }
+    // }
   };
 
   clear = () => {
