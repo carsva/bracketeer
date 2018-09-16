@@ -637,7 +637,7 @@ export class AppProvider extends React.Component {
 
   flags = () => {
     
-    
+    this.clear();
     var countries = this.state.countries;
     var sixteen = [];
 
