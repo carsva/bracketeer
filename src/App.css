@@ -1,7 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 .MasterContainer {
   display: flex;
-  margin-left: 3em;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -268,7 +267,7 @@
   width: 7em;
   right: 5%;
   bottom: 14%;
-} */
+} 
 
 
 
@@ -287,28 +286,27 @@
   
   .MasterContainer {
    display:flex;
+   justify-content: left;
+
   }
 
   .FirstContainer {
     /* background-color: aqua; */
-
     height: auto;
     flex-direction: column;
     justify-content: center;
-    margin-left: 1em;
     
   }
   
   .SecondContainer {
-    width: auto;
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
+
   }
   
   .UpperBracket {
-    width: auto;
-    height: auto;
+    
     display: flex;
     align-items: center;
   }
@@ -392,10 +390,9 @@
   .winner {
     display: flex;
     font-size: 3em;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    margin-left: 5em;
+    margin-left: 3.7em;
+    margin-top: 1em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -533,7 +530,7 @@
   }
   
   .game {
-    width: 5.5em;
+    width: 5.0em;
     height: 3.5em;
     margin-bottom: 0.5em;
     color: rgb(63, 63, 63);
@@ -542,7 +539,7 @@
   
   .game_header {
     background-color: #333333;
-    width: 5.5em;
+    width: 5.0em;
     height: 1em;
     color: white;
     display: flex;
@@ -555,7 +552,7 @@
   }
 
   .team {
-    font-size: 0.7em;
+    font-size: 0.6em;
     margin-top: 0.3em;
     display: flex;
   }
@@ -565,6 +562,9 @@
     position: fixed;
     justify-content: center;
     width: 100%;
+    right: 0;
+    bottom: 20em;
+    left: 0;
   }
 
   .clear_button {
