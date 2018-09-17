@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
+/* @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 .MasterContainer {
   display: flex;
   margin-left: 3em;
@@ -8,7 +8,6 @@
 }
 
 .FirstContainer {
-  /* background-color: aqua; */
   width: auto;
   height: auto;
   display: flex;
@@ -17,7 +16,6 @@
 }
 
 .SecondContainer {
-  /* background-color: rgb(72, 255, 0); */
   width: auto;
   display: flex;
   flex-direction: column;
@@ -29,21 +27,11 @@
   height: auto;
   display: flex;
   align-items: center;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 89, 184);
-    color: rgb(255, 255, 255); */
 }
 
 .UB1 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
 }
 
 .UB2 {
@@ -52,21 +40,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
 }
 
 .UB3 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,11 +53,6 @@
 .UB4 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,11 +61,6 @@
 .UB5 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,11 +69,6 @@
 .UB6 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,7 +84,6 @@
   top: 50%;
   left: 46%;
   transform: translate(-50%, -50%);
-  /* background-color: aquamarine; */
 }
 
 .winner {
@@ -131,17 +93,6 @@
   justify-content: center;
   align-items: center;
   text-align: end
-  
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* width: 15em;
-  height: 4em;
-  
-  background-color: rgb(150, 127, 255);
-}}
-*/
 }
 .winner > img {
   margin-left: 0.5em;
@@ -153,11 +104,6 @@
   height: auto;
   display: flex;
   align-items: center;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(187, 89, 252);
-    color: rgb(255, 255, 255); */
 }
 
 .LB1 {
@@ -166,11 +112,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
 }
 
 .LB2 {
@@ -179,21 +120,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
+
 }
 
 .LB3 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -202,11 +135,7 @@
 .LB4 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,11 +144,7 @@
 .LB5 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,11 +153,7 @@
 .LB6 {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,11 +162,7 @@
 .GrandFinal {
   width: 7.2em;
   height: 24em;
-  /* border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 102, 0);
-    background-color: rgb(252, 154, 89);
-    color: rgb(255, 255, 255); */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -351,8 +268,386 @@
   width: 7em;
   right: 5%;
   bottom: 14%;
+} */
 
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+
+
+
+@media only screen and (max-width: 667px) {
+  
+  .MasterContainer {
+    display: flex;
+    width: 60em;
+    height: auto;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+  }
+
+  .FirstContainer {
+    /* background-color: aqua; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .SecondContainer {
+    /* background-color: rgb(72, 255, 0); */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .UpperBracket {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .UB1 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+  }
+  
+  .UB2 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+  }
+  
+  .UB3 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .UB4 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .UB5 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .UB6 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .winnerContainer {
+    display: flex;
+    width: 38em;
+    height: 8em;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    /* background-color: aquamarine; */
+  }
+  
+  .winner {
+    display: flex;
+    height: 5em;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    text-align: end
+    
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* width: 15em;
+    height: 4em;
+    
+    background-color: rgb(150, 127, 255);
+  }}
+  */
+  }
+  .winner > img {
+    margin-left: 0.5em;
+    height: 2.5em;
+  }
+  
+  .LowerBracket {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(187, 89, 252);
+      color: rgb(255, 255, 255); */
+  }
+  
+  .LB1 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+  }
+  
+  .LB2 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+  }
+  
+  .LB3 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .LB4 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .LB5 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .LB6 {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .GrandFinal {
+    width: 7.2em;
+    height: 24em;
+    /* border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 102, 0);
+      background-color: rgb(252, 154, 89);
+      color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .team {
+    font-size: 0.7em;
+    margin-top: 0.3em;
+    display: flex;
+  }
+  
+  .team_name {
+    font-family: Arial;
+    width: 7.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #808380;
+  } 
+  
+  .logo {
+    width: 0.8em;
+    margin-top: 0.15em;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+  }
+  
+  .game {
+    width: 6em;
+    height: 3.5em;
+    margin-bottom: 0.5em;
+    color: rgb(63, 63, 63);
+    background-color: #222222;
+  }
+  
+  .game_header {
+    background-color: #333333;
+    width: 6em;
+    height: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game_header > p {
+    font-size: 0.5em;
+  }
+
+  .team {
+    font-size: 0.8em;
+    margin-top: 0.3em;
+    display: flex;
+  }
+
+  .buttons {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: fixed;
+    width: 12em;
+    right: 10%;
+    bottom: 5%;
+    
+  }
+
+  .clear_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(255, 174, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 5em;
+    height: 2.2em;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 0.9em;
 }
 
-@media only screen and (max-width: 600px) {
+.flag_button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-color: rgb(255, 0, 234);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.3em;
+  margin-bottom: 0.7em;
+  width: 5em;
+  height: 2.2em;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 0.9em;
 }
+
+.dota_button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-color: rgb(255, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.3em;
+  margin-bottom: 0.7em;
+  width: 6.4em;
+  height: 2.2em;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 0.9em;
+}
+
+.resolve_button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-color: aqua;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.3em;
+  margin-bottom: 0.7em;
+  width: 5em;
+  height: 2.2em;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 0.9em;
+}
+
+  
+}
+

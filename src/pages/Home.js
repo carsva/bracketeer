@@ -52,12 +52,6 @@ class Home extends Component {
                 Flags
               </button>
             </div>
-
-            {/* <div>
-                {console.log(context.state)}           
-                <h3>Data that lives in the context</h3>
-                <pre>{JSON.stringify(context, null, 4)}</pre>
-              </div> */}
           </div>
         )}
       </AppConsumer>
