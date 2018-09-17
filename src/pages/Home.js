@@ -38,9 +38,6 @@ class Home extends Component {
               </div>
             </div>
             <div className="buttons">
-              <button className="resolve_button" onClick={context.state.test}>
-                Resolve
-              </button>
               <button className="clear_button" onClick={context.state.clear}>
                 Clear
               </button>
@@ -50,6 +47,9 @@ class Home extends Component {
               </button>
               <button className="flag_button" onClick={context.state.flags}>
                 Flags
+              </button>
+              <button className="resolve_button" onClick={context.state.test}>
+                Resolve
               </button>
             </div>
           </div>

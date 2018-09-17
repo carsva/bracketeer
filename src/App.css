@@ -286,20 +286,20 @@
 @media only screen and (max-width: 667px) {
   
   .MasterContainer {
-   
+   display:flex;
   }
 
   .FirstContainer {
     /* background-color: aqua; */
-    width: auto;
+
     height: auto;
-    display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 1em;
+    
   }
   
   .SecondContainer {
-    /* background-color: rgb(72, 255, 0); */
     width: auto;
     display: flex;
     flex-direction: column;
@@ -314,7 +314,7 @@
   }
   
   .UB1 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -324,7 +324,7 @@
   }
   
   .UB2 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     display: flex;
     flex-direction: column;
@@ -337,7 +337,7 @@
   }
   
   .UB3 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -350,7 +350,7 @@
   }
   
   .UB4 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -364,7 +364,7 @@
   }
   
   .UB5 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -377,7 +377,7 @@
   }
   
   .UB6 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -389,27 +389,19 @@
     justify-content: center;
   }
   
-
-  
   .winner {
     display: flex;
-    height: 5em;
     font-size: 3em;
     justify-content: center;
     align-items: center;
-    text-align: end
-    
-    /* position: absolute; */
-    /* top: 50%;
+    position: absolute;
+    margin-left: 5em;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-    /* width: 15em;
-    height: 4em;
-    
-    background-color: rgb(150, 127, 255);
-  }}
-  */
+    transform: translate(-50%, -50%);
   }
+  
+
   .winner > img {
     margin-left: 0.5em;
     height: 2.5em;
@@ -428,7 +420,7 @@
   }
   
   .LB1 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     display: flex;
     flex-direction: column;
@@ -441,7 +433,7 @@
   }
   
   .LB2 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     display: flex;
     flex-direction: column;
@@ -454,7 +446,7 @@
   }
   
   .LB3 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -467,7 +459,7 @@
   }
   
   .LB4 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -480,7 +472,7 @@
   }
   
   .LB5 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -493,7 +485,7 @@
   }
   
   .LB6 {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -506,7 +498,7 @@
   }
   
   .GrandFinal {
-    width: 7.2em;
+    width: 6em;
     height: 24em;
     /* border-style: solid;
       border-width: 2px;
@@ -541,7 +533,7 @@
   }
   
   .game {
-    width: 6em;
+    width: 5.5em;
     height: 3.5em;
     margin-bottom: 0.5em;
     color: rgb(63, 63, 63);
@@ -550,7 +542,7 @@
   
   .game_header {
     background-color: #333333;
-    width: 6em;
+    width: 5.5em;
     height: 1em;
     color: white;
     display: flex;
@@ -563,20 +555,16 @@
   }
 
   .team {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-top: 0.3em;
     display: flex;
   }
 
   .buttons {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    display: flex;
     position: fixed;
-    width: 12em;
-    right: 10%;
-    bottom: 5%;
-    
+    justify-content: center;
+    width: 100%;
   }
 
   .clear_button {
