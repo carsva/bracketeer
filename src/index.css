@@ -9,12 +9,14 @@ body {
     background-position: center; 
   background-color: black;
   color: white;  
+  overflow: auto;
 }
 
 html {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  overflow: auto;
   
 }
 

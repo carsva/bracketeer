@@ -91,7 +91,7 @@
   font-size: 3em;
   justify-content: center;
   align-items: center;
-  text-align: end
+  text-align: end;
 }
 .winner > img {
   margin-left: 0.5em;
@@ -119,7 +119,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .LB3 {
@@ -180,7 +179,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #808380;
-} 
+}
 
 .logo {
   width: 0.8em;
@@ -225,16 +224,16 @@
 }
 
 .clear_button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-color: rgb(255, 174, 0);
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0.3em;
-    margin-bottom: 0.7em;
-    width: 5em;
-    height: 2.2em;
-    font-size: 0.8em;
-    color: white;
-    margin-left: 0.9em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-color: rgb(255, 174, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.3em;
+  margin-bottom: 0.7em;
+  width: 5em;
+  height: 2.2em;
+  font-size: 0.8em;
+  color: white;
+  margin-left: 0.9em;
 }
 
 .flag_button {
@@ -267,10 +266,7 @@
   width: 7em;
   right: 5%;
   bottom: 14%;
-} 
-
-
-
+}
 
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
@@ -278,16 +274,11 @@
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
-
-
-
 
 @media only screen and (max-width: 667px) {
-  
   .MasterContainer {
-   display:flex;
-   justify-content: left;
-
+    display: flex;
+    justify-content: left;
   }
 
   .FirstContainer {
@@ -295,22 +286,18 @@
     height: auto;
     flex-direction: column;
     justify-content: center;
-    
   }
-  
+
   .SecondContainer {
-    
     flex-direction: column;
     justify-content: center;
-
   }
-  
+
   .UpperBracket {
-    
     display: flex;
     align-items: center;
   }
-  
+
   .UB1 {
     width: 6em;
     height: 24em;
@@ -320,7 +307,7 @@
       background-color: rgb(252, 154, 89);
       color: rgb(255, 255, 255); */
   }
-  
+
   .UB2 {
     width: 6em;
     height: 24em;
@@ -333,7 +320,7 @@
       background-color: rgb(252, 154, 89);
       color: rgb(255, 255, 255); */
   }
-  
+
   .UB3 {
     width: 6em;
     height: 24em;
@@ -346,7 +333,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .UB4 {
     width: 6em;
     height: 24em;
@@ -358,9 +345,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
   }
-  
+
   .UB5 {
     width: 6em;
     height: 24em;
@@ -373,7 +359,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .UB6 {
     width: 6em;
     height: 24em;
@@ -386,7 +372,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .winner {
     display: flex;
     font-size: 3em;
@@ -397,13 +383,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
 
   .winner > img {
     margin-left: 0.5em;
     height: 2.5em;
   }
-  
+
   .LowerBracket {
     width: auto;
     height: auto;
@@ -415,7 +400,7 @@
       background-color: rgb(187, 89, 252);
       color: rgb(255, 255, 255); */
   }
-  
+
   .LB1 {
     width: 6em;
     height: 24em;
@@ -428,7 +413,7 @@
       background-color: rgb(252, 154, 89);
       color: rgb(255, 255, 255); */
   }
-  
+
   .LB2 {
     width: 6em;
     height: 24em;
@@ -441,7 +426,7 @@
       background-color: rgb(252, 154, 89);
       color: rgb(255, 255, 255); */
   }
-  
+
   .LB3 {
     width: 6em;
     height: 24em;
@@ -454,7 +439,7 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
-  
+
   .LB4 {
     width: 6em;
     height: 24em;
@@ -467,7 +452,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .LB5 {
     width: 6em;
     height: 24em;
@@ -480,7 +465,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .LB6 {
     width: 6em;
     height: 24em;
@@ -493,7 +478,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .GrandFinal {
     width: 6em;
     height: 24em;
@@ -506,13 +491,13 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .team {
     font-size: 0.7em;
     margin-top: 0.3em;
     display: flex;
   }
-  
+
   .team_name {
     font-family: Arial;
     width: 7.5em;
@@ -520,33 +505,33 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     color: #808380;
-  } 
-  
+  }
+
   .logo {
     width: 0.8em;
     margin-top: 0.15em;
     margin-left: 0.5em;
     margin-right: 0.3em;
   }
-  
+
   .game {
-    width: 5.0em;
+    width: 5em;
     height: 3.5em;
     margin-bottom: 0.5em;
     color: rgb(63, 63, 63);
     background-color: #222222;
   }
-  
+
   .game_header {
     background-color: #333333;
-    width: 5.0em;
+    width: 5em;
     height: 1em;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .game_header > p {
     font-size: 0.5em;
   }
@@ -560,65 +545,55 @@
   .buttons {
     display: flex;
     position: fixed;
-    justify-content: center;
     width: 100%;
-    right: 0;
-    bottom: 20em;
-    left: 0;
+    right: 0em;
+    bottom: 10em;
+    left: 0em;
+    font-size: 1.3em;
   }
 
   .clear_button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
     border-color: rgb(255, 174, 0);
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0.3em;
     margin-bottom: 0.7em;
-    width: 5em;
     height: 2.2em;
-    font-size: 1.5em;
+
     color: white;
-    margin-left: 0.9em;
-}
+  }
 
-.flag_button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: rgb(255, 0, 234);
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.3em;
-  margin-bottom: 0.7em;
-  width: 5em;
-  height: 2.2em;
-  font-size: 1.5em;
-  color: white;
-  margin-left: 0.9em;
-}
+  .flag_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    border-color: rgb(255, 0, 234);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    height: 2.2em;
+    color: white;
+  }
 
-.dota_button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: rgb(255, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.3em;
-  margin-bottom: 0.7em;
-  width: 6.4em;
-  height: 2.2em;
-  font-size: 1.5em;
-  color: white;
-  margin-left: 0.9em;
-}
+  .dota_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    border-color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    height: 2.2em;
+    color: white;
+  }
 
-.resolve_button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: aqua;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.3em;
-  margin-bottom: 0.7em;
-  width: 5em;
-  height: 2.2em;
-  font-size: 1.5em;
-  color: white;
-  margin-left: 0.9em;
+  .resolve_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    border-color: aqua;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    height: 2.2em;
+    color: white;
+  }
 }
-
-  
-}
-

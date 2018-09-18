@@ -43,7 +43,7 @@ class Home extends Component {
               </button>
 
               <button className="dota_button" onClick={context.state.dota}>
-                Dota teams
+                Dota
               </button>
               <button className="flag_button" onClick={context.state.flags}>
                 Flags
