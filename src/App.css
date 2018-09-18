@@ -277,6 +277,7 @@
 
 @media only screen and (max-width: 667px) {
   .MasterContainer {
+    width: 100%;
     display: flex;
     justify-content: left;
   }
@@ -544,11 +545,8 @@
 
   .buttons {
     position: fixed;
-    left:0em;
-    bottom: 6em;
-    width: 100%;
-    font-size: 1.3em;
-
+    right: 4em;
+    bottom: 10em;
   }
 
   .buttons > button {
