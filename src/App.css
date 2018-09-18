@@ -543,13 +543,17 @@
   }
 
   .buttons {
-    display: flex;
     position: fixed;
+    left:0em;
+    bottom: 6em;
     width: 100%;
-    right: 0em;
-    bottom: 10em;
-    left: 0em;
     font-size: 1.3em;
+
+  }
+
+  .buttons > button {
+    height: 3em;
+    width: 5em;
   }
 
   .clear_button {
@@ -559,7 +563,6 @@
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0.3em;
     margin-bottom: 0.7em;
-    height: 2.2em;
 
     color: white;
   }
@@ -571,7 +574,6 @@
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0.3em;
     margin-bottom: 0.7em;
-    height: 2.2em;
     color: white;
   }
 
@@ -582,7 +584,6 @@
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0.3em;
     margin-bottom: 0.7em;
-    height: 2.2em;
     color: white;
   }
 
@@ -593,7 +594,6 @@
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0.3em;
     margin-bottom: 0.7em;
-    height: 2.2em;
     color: white;
   }
 }
