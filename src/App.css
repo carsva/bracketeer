@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
+
 .MasterContainer {
   display: flex;
   height: auto;
+  width: 900px;
   justify-content: center;
   align-items: center;
 }
@@ -276,13 +278,13 @@
 /* ------------------------------------------------------------------------------ */
 
 @media only screen and (max-width: 667px) {
-  .MasterContainer {
-    position: absolute;
-    top: 20em;
-    bottom: 10em;
-    right: 20em;
-    left: 22em;
-    
+  
+  .buttons {
+    position: fixed;
+    width: 8em;
+    right: 0em;
+    bottom: 5%;
+    color: aqua;
   }
 
   .FirstContainer {
@@ -551,59 +553,9 @@
     display: flex;
   }
 
-  .buttons {
-    width: 96%;
-    font-size: 1em;
-  }
-
-  .buttons > button {
-    height: 4em;
-    width: 100%;
-  }
-
-  .clear_button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-      sans-serif;
-    border-color: rgb(255, 174, 0);
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0.3em;
-    margin-bottom: 0.7em;
-
-    color: white;
-  }
-
-  .flag_button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-      sans-serif;
-    border-color: rgb(255, 0, 234);
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0.3em;
-    margin-bottom: 0.7em;
-    color: white;
-  }
-
-  .dota_button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-      sans-serif;
-    border-color: rgb(255, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0.3em;
-    margin-bottom: 0.7em;
-    color: white;
-  }
-
-  .resolve_button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-      sans-serif;
-    border-color: aqua;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 0.3em;
-    margin-bottom: 0.7em;
-    color: white;
-  }
 }
 
-@media screen and (orientation:landscape) {
+/* @media screen and (orientation:landscape) {
 
   .MasterContainer {
     position: relative;
@@ -643,4 +595,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+} */
