@@ -385,7 +385,7 @@
     display: flex;
     font-size: 3em;
     position: absolute;
-    margin-left: 7em;
+    margin-left: 5em;
     margin-top: 1em;
     top: 50%;
     left: 50%;
@@ -449,7 +449,7 @@
   }
 
   .special {
-    height: 2em;
+    height: 4em;
     width: 1em;
   }
 
@@ -558,6 +558,17 @@
 }
 
 @media screen and (orientation:landscape) {
+
+  .special {
+    height: 4em;
+    width: 1em;
+  }
+
+  .LB3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   /* .MasterContainer {
     position: relative;
