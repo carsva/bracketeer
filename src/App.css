@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 
 .MasterContainer {
+  margin-left: 15em;
+  margin-top: -1em;
   display: flex;
   height: auto;
   width: 900px;
@@ -82,8 +84,8 @@
   align-items: center;
   justify-content: flex-end;
   position: absolute;
-  top: 50%;
-  left: 46%;
+  top: 24%;
+  left: 35%;
   transform: translate(-50%, -50%);
 }
 
@@ -191,7 +193,7 @@
 }
 
 .game {
-  width: 6em;
+  width: 6.5em;
   height: 3.5em;
   margin-bottom: 0.5em;
   color: rgb(63, 63, 63);
@@ -200,7 +202,7 @@
 
 .game_header {
   background-color: #333333;
-  width: 6em;
+  width: 6.5em;
   height: 1em;
   color: white;
   display: flex;
@@ -279,6 +281,11 @@
 
 @media only screen and (max-width: 667px) {
   
+  .MasterContainer {
+    margin-left: -5em;
+    margin-top: -2em;
+  }
+
   .buttons {
     position: fixed;
     display: flex;
@@ -558,6 +565,11 @@
 }
 
 @media screen and (orientation:landscape) {
+
+  .MasterContainer {
+    margin-left: 0em;
+    margin-top: -2em;
+  }
 
   .special {
     height: 4em;
