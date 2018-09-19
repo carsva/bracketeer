@@ -6,6 +6,7 @@ import GrandFinal from './../components/GrandFinal';
 
 class Home extends Component {
   render() {
+  
     return (
       <AppConsumer>
         {context => (

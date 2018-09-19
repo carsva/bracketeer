@@ -702,6 +702,10 @@ export class AppProvider extends React.Component {
       });
     });
 
+    var docWidth = document.documentElement.offsetWidth;
+
+
+
   }
 
   render() {

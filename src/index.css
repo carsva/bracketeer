@@ -9,14 +9,16 @@ body {
     background-position: center; 
   background-color: black;
   color: white;  
-  overflow: hidden;
+  
+  
+  
 
 }
 
 html {
   height: 100%;
     width: 100%;
-    overflow: hidden;
+    
   
 }
 
