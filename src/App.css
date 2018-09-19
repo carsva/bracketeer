@@ -383,7 +383,7 @@
     display: flex;
     font-size: 3em;
     position: absolute;
-    margin-left: 3.7em;
+    margin-left: 7em;
     margin-top: 1em;
     top: 50%;
     left: 50%;
@@ -555,9 +555,9 @@
 
 }
 
-/* @media screen and (orientation:landscape) {
+@media screen and (orientation:landscape) {
 
-  .MasterContainer {
+  /* .MasterContainer {
     position: relative;
     top: 0em;
     left: 0em;
@@ -583,16 +583,16 @@
   .buttons > button {
     height: 4em;
     width: 100%;
-  } 
+  }  */
 
   .winner {
     display: flex;
     font-size: 3em;
     position: absolute;
-    margin-left: 1em;
-    margin-top: 2em;
+    margin-left: 4em;
+    margin-top: 3.9em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-} */
+}
