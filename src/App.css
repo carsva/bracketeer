@@ -277,9 +277,12 @@
 
 @media only screen and (max-width: 667px) {
   .MasterContainer {
-    width: 100%;
-    display: flex;
-    justify-content: left;
+    position: absolute;
+    top: 20em;
+    bottom: 10em;
+    right: 20em;
+    left: 22em;
+    
   }
 
   .FirstContainer {
@@ -438,7 +441,12 @@
       color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+
+  .special {
+    height: 2em;
+    width: 1em;
   }
 
   .LB4 {
@@ -544,14 +552,13 @@
   }
 
   .buttons {
-    position: fixed;
-    right: 4em;
-    bottom: 10em;
+    width: 96%;
+    font-size: 1em;
   }
 
   .buttons > button {
-    height: 3em;
-    width: 5em;
+    height: 4em;
+    width: 100%;
   }
 
   .clear_button {

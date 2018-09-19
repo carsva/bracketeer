@@ -16,7 +16,7 @@ class LB3 extends Component {
             logo1={context.state.placing(9).logo0 ? context.state.placing(9).logo0 : ""}
             round="Round 3"
             />
-
+            <div className="special"></div>
             <Game
             team0={context.state.placing(10).name0 ? context.state.placing(10).name0 : ""} 
             logo0={context.state.placing(10).logo0 ? context.state.placing(10).logo0 : ""}
