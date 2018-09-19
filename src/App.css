@@ -281,10 +281,12 @@
   
   .buttons {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     width: 8em;
-    right: 0em;
+    right: 1.5em;
     bottom: 5%;
-    color: aqua;
   }
 
   .FirstContainer {
@@ -584,6 +586,11 @@
     height: 4em;
     width: 100%;
   }  */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
   .winner {
     display: flex;
