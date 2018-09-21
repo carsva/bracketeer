@@ -1,509 +1,180 @@
 @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 
-.MasterContainer {
-  display: flex;
-  height: auto;
-  align-items: center;
-}
 
-.FirstContainer {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.SecondContainer {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.UpperBracket {
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
-
-.UB1 {
-  width: 7.2em;
-  height: 24em;
-}
-
-.UB2 {
-  width: 7.2em;
-  height: 24em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.UB3 {
-  width: 7.2em;
-  height: 24em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.UB4 {
-  width: 7.2em;
-  height: 24em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.UB5 {
-  width: 7.2em;
-  height: 24em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.UB6 {
-  width: 7.2em;
-  height: 24em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.winnerContainer {
-  display: flex;
-  width: 38em;
-  height: 8em;
-  align-items: center;
-  justify-content: center;
-}
-
-.winner {
-  display: flex;
-  height: 5em;
-  font-size: 3em;
-  justify-content: center;
-  align-items: center;
-  text-align: end;
-}
-.winner > img {
-  margin-left: 0.5em;
-  height: 2.5em;
-}
-
-.LowerBracket {
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
-
-.LB1 {
-  width: 7.2em;
-  height: 24em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.LB2 {
-  width: 7.2em;
-  height: 24em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.LB3 {
-  width: 7.2em;
-  height: 24em;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.LB4 {
-  width: 7.2em;
-  height: 24em;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.LB5 {
-  width: 7.2em;
-  height: 24em;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.LB6 {
-  width: 7.2em;
-  height: 24em;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.GrandFinal {
-  width: 7.2em;
-  height: 24em;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.team {
-  font-size: 0.7em;
-  margin-top: 0.3em;
-  display: flex;
-}
-
-.team_name {
-  font-family: Arial;
-  width: 7.5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #808380;
-}
-
-.logo {
-  width: 0.8em;
-  margin-top: 0.15em;
-  margin-left: 0.5em;
-  margin-right: 0.3em;
-}
-
-.game {
-  width: 6.5em;
-  height: 3.5em;
-  margin-bottom: 0.5em;
-  color: rgb(63, 63, 63);
-  background-color: #222222;
-}
-
-.game_header {
-  background-color: #333333;
-  width: 6.5em;
-  height: 1em;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.game_header > p {
-  font-size: 0.5em;
-}
-
-.resolve_button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: aqua;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.3em;
-  margin-bottom: 0.7em;
-  width: 5em;
-  height: 2.2em;
-  font-size: 0.8em;
-  color: white;
-  margin-left: 0.9em;
-}
-
-.clear_button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: rgb(255, 174, 0);
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.3em;
-  margin-bottom: 0.7em;
-  width: 5em;
-  height: 2.2em;
-  font-size: 0.8em;
-  color: white;
-  margin-left: 0.9em;
-}
-
-.flag_button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: rgb(255, 0, 234);
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.3em;
-  margin-bottom: 0.7em;
-  width: 5em;
-  height: 2.2em;
-  font-size: 0.8em;
-  color: white;
-  margin-left: 0.9em;
-}
-
-.dota_button {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: rgb(255, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.3em;
-  margin-bottom: 0.7em;
-  width: 6.4em;
-  height: 2.2em;
-  font-size: 0.8em;
-  color: white;
-  margin-left: 0.9em;
-}
-.buttons {
-  position: fixed;
-  width: 7em;
-  right: 5%;
-  bottom: 14%;
-}
-
-/* ------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------ */
-
-@media only screen and (max-width: 667px) {
+@media (max-width: 1000px) {
   
   .MasterContainer {
-    margin-left: 1em;
-    margin-top: -2em;
+    margin-left: 2em;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
   }
-
-  .buttons {
-    position: fixed;
+  
+  .FirstContainer {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 8em;
-    right: 1.5em;
-    bottom: 5%;
-  }
-
-  .FirstContainer {
-    /* background-color: aqua; */
-    height: auto;
-    flex-direction: column;
     justify-content: center;
   }
-
+  
   .SecondContainer {
+    width: auto;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .UpperBracket {
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
   }
-
+  
   .UB1 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
   }
-
+  
   .UB2 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
   }
-
+  
   .UB3 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .UB4 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .UB5 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .UB6 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
+  .winnerContainer {
+    display: flex;
+    width: 38em;
+    height: 8em;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .winner {
     display: flex;
+    height: 5em;
     font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
   }
-
   .winner > img {
     margin-left: 0.5em;
     height: 2.5em;
   }
-
+  
   .LowerBracket {
     width: auto;
     height: auto;
     display: flex;
     align-items: center;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(187, 89, 252);
-      color: rgb(255, 255, 255); */
   }
-
+  
   .LB1 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
   }
-
+  
   .LB2 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
   }
-
+  
   .LB3 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
+  
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
-
-  .special {
-    height: 4em;
-    width: 1em;
-  }
-
+  
   .LB4 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .LB5 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .LB6 {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .GrandFinal {
-    width: 6em;
+    width: 7.2em;
     height: 24em;
-    /* border-style: solid;
-      border-width: 2px;
-      border-color: rgb(255, 102, 0);
-      background-color: rgb(252, 154, 89);
-      color: rgb(255, 255, 255); */
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .team {
     font-size: 0.7em;
     margin-top: 0.3em;
     display: flex;
   }
-
+  
   .team_name {
     font-family: Arial;
     width: 7.5em;
@@ -512,96 +183,377 @@
     white-space: nowrap;
     color: #808380;
   }
-
+  
   .logo {
     width: 0.8em;
     margin-top: 0.15em;
     margin-left: 0.5em;
     margin-right: 0.3em;
   }
-
+  
   .game {
-    width: 5em;
+    width: 6.5em;
     height: 3.5em;
     margin-bottom: 0.5em;
     color: rgb(63, 63, 63);
     background-color: #222222;
   }
-
+  
   .game_header {
     background-color: #333333;
-    width: 5em;
+    width: 6.5em;
     height: 1em;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
+  
   .game_header > p {
     font-size: 0.5em;
   }
-
-  .team {
-    font-size: 0.6em;
-    margin-top: 0.3em;
-    display: flex;
+  
+  .resolve_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: aqua;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 5em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
   }
-
+  
+  .clear_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(255, 174, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 5em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
+  }
+  
+  .flag_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(255, 0, 234);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 5em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
+  }
+  
+  .dota_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 6.4em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
+  }
+  .buttons {
+    position: fixed;
+    width: 7em;
+    right: 5%;
+    bottom: 14%;
+  }
+  
+  
 }
 
-@media screen and (orientation:landscape) {
 
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+
+@media (min-width: 1000px) {
+  
   .MasterContainer {
-    margin-left: 1em;
+    margin-left: 2em;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
   }
-
-  .special {
-    height: 4em;
-    width: 1em;
-  }
-
-  .LB3 {
+  
+  .FirstContainer {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
-  /* .MasterContainer {
-    position: relative;
-    top: 0em;
-    left: 0em;
-    right: 0em;
-    bottom: 0em;
-
-    * {
-      
-      margin: 0;
-      padding: 0;
-      }
-    
-  }
-    .buttons {
-    position: fixed;
-    display:flex;
-    flex-direction: column;
-    top: 2em;
-    left: 1em;
-    font-size: 1em;
-  }
-
-  .buttons > button {
-    height: 4em;
-    width: 100%;
-  }  */
-  .buttons {
+  
+  .SecondContainer {
+    width: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
   }
-
+  
+  .UpperBracket {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .UB1 {
+    width: 7.2em;
+    height: 24em;
+  }
+  
+  .UB2 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .UB3 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .UB4 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .UB5 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .UB6 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .winnerContainer {
+    display: flex;
+    width: 38em;
+    height: 8em;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .winner {
     display: flex;
+    height: 5em;
     font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
   }
+  .winner > img {
+    margin-left: 0.5em;
+    height: 2.5em;
+  }
+  
+  .LowerBracket {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .LB1 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .LB2 {
+    width: 7.2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .LB3 {
+    width: 7.2em;
+    height: 24em;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .LB4 {
+    width: 7.2em;
+    height: 24em;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .LB5 {
+    width: 7.2em;
+    height: 24em;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .LB6 {
+    width: 7.2em;
+    height: 24em;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .GrandFinal {
+    width: 7.2em;
+    height: 24em;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .team {
+    font-size: 0.7em;
+    margin-top: 0.3em;
+    display: flex;
+  }
+  
+  .team_name {
+    font-family: Arial;
+    width: 7.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #808380;
+  }
+  
+  .logo {
+    width: 0.8em;
+    margin-top: 0.15em;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+  }
+  
+  .game {
+    width: 6.5em;
+    height: 3.5em;
+    margin-bottom: 0.5em;
+    color: rgb(63, 63, 63);
+    background-color: #222222;
+  }
+  
+  .game_header {
+    background-color: #333333;
+    width: 6.5em;
+    height: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game_header > p {
+    font-size: 0.5em;
+  }
+  
+  .resolve_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: aqua;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 5em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
+  }
+  
+  .clear_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(255, 174, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 5em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
+  }
+  
+  .flag_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(255, 0, 234);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 5em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
+  }
+  
+  .dota_button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 0.7em;
+    width: 6.4em;
+    height: 2.2em;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 0.9em;
+  }
+  .buttons {
+    position: fixed;
+    width: 7em;
+    right: 5%;
+    bottom: 14%;
+  }
+  
+  
 }
