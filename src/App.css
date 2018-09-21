@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 
 .MasterContainer {
-  margin-left: 18em;
-  margin-top: -1em;
   display: flex;
   height: auto;
   align-items: center;
@@ -555,7 +553,7 @@
 @media screen and (orientation:landscape) {
 
   .MasterContainer {
- 
+    margin-left: 1em;
   }
 
   .special {
