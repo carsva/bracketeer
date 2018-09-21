@@ -83,10 +83,6 @@
   height: 8em;
   align-items: center;
   justify-content: flex-end;
-  position: absolute;
-  top: 24%;
-  left: 35%;
-  transform: translate(-50%, -50%);
 }
 
 .winner {
@@ -391,12 +387,6 @@
   .winner {
     display: flex;
     font-size: 3em;
-    position: absolute;
-    margin-left: 5em;
-    margin-top: 1em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .winner > img {
@@ -618,11 +608,5 @@
   .winner {
     display: flex;
     font-size: 3em;
-    position: absolute;
-    margin-left: 4em;
-    margin-top: 3.9em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }

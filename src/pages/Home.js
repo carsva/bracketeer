@@ -14,13 +14,7 @@ class Home extends Component {
             <div className="MasterContainer">
               <div className="FirstContainer">
                 <UpperBracket />
-                <LowerBracket />
-              </div>
-              <div className="SecondContainer">
-                <GrandFinal />
-              </div>
-            </div>
-            <div className="winnerContainer">
+                <div className="winnerContainer">
               <div className="winner">
                 <h3>
                   {context.state.placing(23).name0
@@ -38,6 +32,13 @@ class Home extends Component {
                 />
               </div>
             </div>
+                <LowerBracket />
+              </div>
+              <div className="SecondContainer">
+                <GrandFinal />
+              </div>
+            </div>
+           
             <div className="buttons">
             <button className="resolve_button" onClick={context.state.test}>
                 Resolve
